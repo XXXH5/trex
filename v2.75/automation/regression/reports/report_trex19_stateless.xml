@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="2" errors="0" failures="1" skip="0"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="0.761"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_9k_stream" time="53.897"><failure type="exceptions.AssertionError" message="'wait_on_traffic' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 222, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 708, in test_9k_stream
+    pkt_size)==0:
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 667, in __9k_stream
+    assert False , '{0}'.format(e)
+AssertionError: 'wait_on_traffic' - interrupted by a keyboard signal (probably ctrl + c)
+]]></failure><system-out><![CDATA[
+num cores 13 num 9k mbufs 20 num 4k mbufs 20
+Iteration 0
+ 0 - duration 31 pgid 19676 pkt_size 5677 s_port [0] 
+{'average': 1.0,
+ 'histogram': {0: 69985, 10: 2, 20: 1},
+ 'jitter': 0,
+ 'last_max': 5,
+ 'total_max': 13,
+ 'total_min': 2}
+{'latecny': {'avr': 1.0, 'jitter': 0, 'max': 13, 'max-win': 5, 'min': 2},
+ 'name': 'test_9k_stream',
+ 'type': 'stateless'}
+Latency results, Average 1 usec, ,Max 13 usec. 
+===>Iteration 0 PASS 0
+Iteration 1
+ 0 - duration 48 pgid 54691 pkt_size 5290 s_port [0] 
+]]></system-out></testcase></testsuite>

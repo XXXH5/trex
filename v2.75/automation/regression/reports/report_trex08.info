@@ -1,0 +1,10 @@
+Version : v2.57
+DPDK version: DPDK 19.05.0
+User    : hhaim
+Date    : Jun 13 2019 , 16:02:12
+Uuid    : 2de5f1e2-8ddb-11e9-9ad6-641225363740
+Git SHA : b609ab460efeb59384cbcebc866b4e01b930d3cc
+Compiled with GCC: 7.2.0
+Compiled with glibc: 2.16 (host: 2.17)
+Sanitized image: yes
+Modes: ['loopback']

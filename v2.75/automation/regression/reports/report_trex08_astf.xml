@@ -1,0 +1,3696 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="40" errors="17" failures="0" skip="0"><testcase classname="astf_tests.astf_general_test.ASTFBasic_Test" name="test_connectivity" time="0.594"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 3, 1: 2, 2: 1, 3: 0}, 'bi': [(0, 3), (1, 2)], 'unknown': []}
+]]></system-out></testcase><testcase classname="astf_tests.astf_examples_test.ASTFExamples_Test" name="test_astf_prof_examples" time="16.496"><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/interactive; /router/bin/python-2.7.4 -m trex.examples.astf.astf_example -s 10.56.216.127'
+Stdout:
+?[?1034hInjecting with multiplier of '100' for 10 seconds
+{0: {'ibytes': 46681908,
+     'ierrors': 0,
+     'ipackets': 34475,
+     'obytes': 837053,
+     'oerrors': 0,
+     'opackets': 6895,
+     'rx_bps': 10835419.0,
+     'rx_bps_L1': 10995648.296875,
+     'rx_pps': 1001.43310546875,
+     'rx_util': 0.0274891207421875,
+     'tx_bps': 191391.71875,
+     'tx_bps_L1': 223616.26953125,
+     'tx_pps': 201.4034423828125,
+     'tx_util': 0.000559040673828125},
+ 1: {'ibytes': 837053,
+     'ierrors': 0,
+     'ipackets': 6895,
+     'obytes': 46681908,
+     'oerrors': 0,
+     'opackets': 34475,
+     'rx_bps': 192275.875,
+     'rx_bps_L1': 224626.96875,
+     'rx_pps': 202.1943359375,
+     'rx_util': 0.000561567421875,
+     'tx_bps': 10853965.0,
+     'tx_bps_L1': 11014500.107421875,
+     'tx_pps': 1003.3444213867188,
+     'tx_util': 0.027536250268554687},
+ 2: {'ibytes': 46681908,
+     'ierrors': 0,
+     'ipackets': 34475,
+     'obytes': 837053,
+     'oerrors': 0,
+     'opackets': 6895,
+     'rx_bps': 10853901.0,
+     'rx_bps_L1': 11014435.208984375,
+     'rx_pps': 1003.3388061523438,
+     'rx_util': 0.02753608802246094,
+     'tx_bps': 192275.875,
+     'tx_bps_L1': 224626.96875,
+     'tx_pps': 202.1943359375,
+     'tx_util': 0.000561567421875},
+ 3: {'ibytes': 837053,
+     'ierrors': 0,
+     'ipackets': 6895,
+     'obytes': 46681908,
+     'oerrors': 0,
+     'opackets': 34475,
+     'rx_bps': 191388.71875,
+     'rx_bps_L1': 223612.95947265625,
+     'rx_pps': 201.40150451660156,
+     'rx_util': 0.0005590323986816406,
+     'tx_bps': 10818827.0,
+     'tx_bps_L1': 10978837.683593748,
+     'tx_pps': 1000.0667724609375,
+     'tx_util': 0.02744709420898437},
+ 'global': {'active_flows': 0.0,
+            'active_sockets': 0,
+            'bw_per_core': 2.3134195804595947,
+            'cpu_util': 0.13620196282863617,
+            'cpu_util_raw': 0.0,
+            'open_flows': 2758.0,
+            'platform_factor': 1.0,
+            'queue_full': 0,
+            'rx_bps': 22072984.0,
+            'rx_core_pps': 0.0,
+            'rx_cpu_util': 0.0,
+            'rx_drop_bps': 0.0,
+            'rx_pps': 2408.367919921875,
+            'socket_util': 0.0,
+            'total_alloc_error': 0,
+            'total_clients': 0,
+            'total_servers': 0,
+            'tx_bps': 22056460.0,
+            'tx_cps': 55.57435607910156,
+            'tx_expected_bps': 0.0,
+            'tx_expected_cps': 0.0,
+            'tx_expected_pps': 0.0,
+            'tx_pps': 2407.0087890625},
+ 'latency': {},
+ 'total': {'ibytes': 95037922,
+           'ierrors': 0,
+           'ipackets': 82740,
+           'obytes': 95037922,
+           'oerrors': 0,
+           'opackets': 82740,
+           'rx_bps': 22072984.59375,
+           'rx_bps_L1': 22458323.43408203,
+           'rx_pps': 2408.3677520751953,
+           'rx_util': 0.05614580858520508,
+           'tx_bps': 22056459.59375,
+           'tx_bps_L1': 22441581.029296875,
+           'tx_pps': 2407.0089721679688,
+           'tx_util': 0.05610395257324218},
+ 'traffic': {'client': {u'm_active_flows': 0,
+                        u'm_avg_size': 1040.2496431994878,
+                        u'm_est_flows': 0,
+                        u'm_rx_bw_l7_r': 14722351.38388183,
+                        u'm_rx_pps_r': 1494.097900390625,
+                        u'm_tx_bw_l7_r': 110857.54713824244,
+                        u'm_tx_bw_l7_total_r': 110850.46931887136,
+                        u'm_tx_pps_r': 288.3118591308594,
+                        u'm_tx_ratio': 100.00638501525034,
+                        u'tcps_closed': 2758,
+                        u'tcps_connattempt': 2758,
+                        u'tcps_connects': 2758,
+                        u'tcps_delack': 2758,
+                        u'tcps_preddat': 60676,
+                        u'tcps_rcvackbyte': 686742,
+                        u'tcps_rcvackbyte_of': 2758,
+                        u'tcps_rcvackpack': 5516,
+                        u'tcps_rcvbyte': 88515252,
+                        u'tcps_rcvpack': 66192,
+                        u'tcps_rttupdated': 8274,
+                        u'tcps_segstimed': 8274,
+                        u'tcps_sndacks': 8274,
+                        u'tcps_sndbyte': 686742,
+                        u'tcps_sndbyte_ok': 686742,
+                        u'tcps_sndctrl': 2758,
+                        u'tcps_sndpack': 2758,
+                        u'tcps_sndtotal': 13790},
+             'server': {u'm_active_flows': 0,
+                        u'm_avg_size': 1070.8599294149963,
+                        u'm_est_flows': 0,
+                        u'm_rx_bw_l7_r': 110856.61206988864,
+                        u'm_rx_pps_r': 347.5777587890625,
+                        u'm_tx_bw_l7_r': 15159278.657991566,
+                        u'm_tx_bw_l7_total_r': 14722291.569549544,
+                        u'm_tx_pps_r': 1434.884033203125,
+                        u'm_tx_ratio': 102.9682002042797,
+                        u'tcps_accepts': 2758,
+                        u'tcps_closed': 2758,
+                        u'tcps_connects': 2758,
+                        u'tcps_rcvackbyte': 88515252,
+                        u'tcps_rcvackbyte_of': 5516,
+                        u'tcps_rcvackpack': 11032,
+                        u'tcps_rcvbyte': 686742,
+                        u'tcps_rcvpack': 5516,
+                        u'tcps_rttupdated': 11032,
+                        u'tcps_segstimed': 11032,
+                        u'tcps_sndacks': 5516,
+                        u'tcps_sndbyte': 88515252,
+                        u'tcps_sndbyte_ok': 88515252,
+                        u'tcps_sndpack': 63434,
+                        u'tcps_sndtotal': 68950}}}
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency" time="31.516"><system-out><![CDATA[starting profile http_simple.py 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 4
+port_id: 1, s_max: 0, s_avg: 75
+port_id: 2, s_max: 0, s_avg: 4
+port_id: 3, s_max: 0, s_avg: 78
+
+ client active flows 1660,
+port_id: 0, s_max: 10, s_avg: 6
+port_id: 1, s_max: 10, s_avg: 24
+port_id: 2, s_max: 10, s_avg: 6
+port_id: 3, s_max: 11, s_avg: 25
+
+ client active flows 1662,
+port_id: 0, s_max: 8, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 11
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 11
+
+ client active flows 1662,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 12, s_avg: 8
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 8
+
+ client active flows 1660,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 13, s_avg: 7
+port_id: 3, s_max: 14, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 12, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1659,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 8, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1658,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 12, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1663,
+port_id: 0, s_max: 13, s_avg: 7
+port_id: 1, s_max: 13, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1663,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 8, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1663,
+port_id: 0, s_max: 8, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 8, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1663,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 9, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 7
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_dynamic_profile" time="16.639"><system-out><![CDATA[starting profile http_simple.py 
+dynamic profile 0 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1662,
+port_id: 0, s_max: 0, s_avg: 6
+port_id: 1, s_max: 0, s_avg: 27
+port_id: 2, s_max: 0, s_avg: 6
+port_id: 3, s_max: 0, s_avg: 28
+
+ client active flows 1661,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 12
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 12
+
+starting profile http_simple.py 
+dynamic profile 1 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1660,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 6
+port_id: 1, s_max: 10, s_avg: 105
+port_id: 2, s_max: 0, s_avg: 6
+port_id: 3, s_max: 10, s_avg: 108
+
+starting profile http_simple.py 
+dynamic profile 2 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1663,
+port_id: 0, s_max: 0, s_avg: 4
+port_id: 1, s_max: 0, s_avg: 121
+port_id: 2, s_max: 0, s_avg: 4
+port_id: 3, s_max: 0, s_avg: 125
+
+ client active flows 1660,
+port_id: 0, s_max: 9, s_avg: 6
+port_id: 1, s_max: 9, s_avg: 36
+port_id: 2, s_max: 10, s_avg: 6
+port_id: 3, s_max: 10, s_avg: 36
+
+starting profile http_simple.py 
+dynamic profile 3 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 4
+port_id: 1, s_max: 0, s_avg: 61
+port_id: 2, s_max: 0, s_avg: 4
+port_id: 3, s_max: 0, s_avg: 64
+
+ client active flows 1661,
+port_id: 0, s_max: 10, s_avg: 6
+port_id: 1, s_max: 10, s_avg: 20
+port_id: 2, s_max: 11, s_avg: 6
+port_id: 3, s_max: 10, s_avg: 21
+
+starting profile http_simple.py 
+dynamic profile 4 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 4
+port_id: 1, s_max: 0, s_avg: 19
+port_id: 2, s_max: 0, s_avg: 4
+port_id: 3, s_max: 0, s_avg: 20
+
+ client active flows 1660,
+port_id: 0, s_max: 10, s_avg: 6
+port_id: 1, s_max: 10, s_avg: 10
+port_id: 2, s_max: 11, s_avg: 6
+port_id: 3, s_max: 11, s_avg: 10
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop" time="11.712"><system-out><![CDATA[starting profile http_simple.py 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1662,
+port_id: 0, s_max: 0, s_avg: 18
+port_id: 1, s_max: 0, s_avg: 180
+port_id: 2, s_max: 0, s_avg: 18
+port_id: 3, s_max: 0, s_avg: 185
+
+ client active flows 1662,
+port_id: 0, s_max: 10, s_avg: 10
+port_id: 1, s_max: 9, s_avg: 50
+port_id: 2, s_max: 9, s_avg: 10
+port_id: 3, s_max: 9, s_avg: 52
+
+ client active flows 1660,
+port_id: 0, s_max: 11, s_avg: 8
+port_id: 1, s_max: 11, s_avg: 18
+port_id: 2, s_max: 11, s_avg: 8
+port_id: 3, s_max: 8, s_avg: 18
+
+ client active flows 1661,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 10
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 10
+
+ client active flows 1662,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 8
+port_id: 2, s_max: 11, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 8
+
+ client active flows 1663,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 9, s_avg: 7
+
+ client active flows 1662,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 11, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 11, s_avg: 7
+port_id: 1, s_max: 12, s_avg: 7
+port_id: 2, s_max: 9, s_avg: 7
+port_id: 3, s_max: 11, s_avg: 7
+
+ client active flows 1660,
+port_id: 0, s_max: 10, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+ client active flows 1661,
+port_id: 0, s_max: 9, s_avg: 7
+port_id: 1, s_max: 10, s_avg: 7
+port_id: 2, s_max: 10, s_avg: 7
+port_id: 3, s_max: 10, s_avg: 7
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_latency_stop_dynamic_profile" time="11.413"><system-out><![CDATA[starting profile http_simple.py 
+dynamic profile 0 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 5
+port_id: 1, s_max: 0, s_avg: 8
+port_id: 2, s_max: 0, s_avg: 5
+port_id: 3, s_max: 0, s_avg: 8
+
+starting profile http_simple.py 
+dynamic profile 1 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+starting profile http_simple.py 
+dynamic profile 2 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1662,
+port_id: 0, s_max: 0, s_avg: 4
+port_id: 1, s_max: 0, s_avg: 90
+port_id: 2, s_max: 0, s_avg: 4
+port_id: 3, s_max: 0, s_avg: 93
+
+starting profile http_simple.py 
+dynamic profile 3 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1662,
+port_id: 0, s_max: 0, s_avg: 4
+port_id: 1, s_max: 0, s_avg: 44
+port_id: 2, s_max: 0, s_avg: 4
+port_id: 3, s_max: 0, s_avg: 46
+
+starting profile http_simple.py 
+dynamic profile 4 
+ client active flows 0,
+port_id: 0, s_max: 0, s_avg: 0
+port_id: 1, s_max: 0, s_avg: 0
+port_id: 2, s_max: 0, s_avg: 0
+port_id: 3, s_max: 0, s_avg: 0
+
+ client active flows 1661,
+port_id: 0, s_max: 0, s_avg: 12
+port_id: 1, s_max: 0, s_avg: 16
+port_id: 2, s_max: 0, s_avg: 14
+port_id: 3, s_max: 0, s_avg: 19
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_only_latency" time="11.652"><system-out><![CDATA[ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+ client active flows 0,
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles" time="93.668"><error type="trex.common.trex_exceptions.TRexError" message="Could not load profile: &#10;Python Traceback follows:&#10;&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py&quot;, line 90, in get_profile&#10;    return self.http1b_t()&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py&quot;, line 85, in http1b_t&#10;    profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py&quot;, line 1622, in __init__&#10;    raise ASTFError(&quot;Two server template with port {}&quot;.format(port))&#10;ASTFError: &#10;******&#10;&#10;Exception stack (most recent call last):&#10;&#10;#3     trex_astf_profile.py:1768                          - 'profile = module.register().get_profile(**kwargs)'&#10;#2     todd.py:90                                         - 'return self.http1b_t()'&#10;#1     todd.py:85                                         - 'profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)'&#10;#0     trex_astf_profile.py:1622                          - 'raise ASTFError(&quot;Two server template with port {}&quot;.format(port))'&#10;&#10;Summary error message:&#10;&#10;Two server template with port 81&#10;&#10;"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 407, in test_astf_prof_profiles
+    self.run_astf_profile(fname, m=1, is_udp=False, is_tcp=False, ipv6 =False, check_counters=False, nc = True)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 248, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 273, in run_astf_profile
+    c.load_profile(self.get_profile_by_name(profile_name))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 526, in load_profile
+    raise TRexError('Could not load profile: %s' % e)
+TRexError: Could not load profile: 
+Python Traceback follows:
+
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py", line 90, in get_profile
+    return self.http1b_t()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py", line 85, in http1b_t
+    profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1622, in __init__
+    raise ASTFError("Two server template with port {}".format(port))
+ASTFError: 
+******
+
+Exception stack (most recent call last):
+
+#3     trex_astf_profile.py:1768                          - 'profile = module.register().get_profile(**kwargs)'
+#2     todd.py:90                                         - 'return self.http1b_t()'
+#1     todd.py:85                                         - 'profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)'
+#0     trex_astf_profile.py:1622                          - 'raise ASTFError("Two server template with port {}".format(port))'
+
+Summary error message:
+
+Two server template with port 81
+
+
+]]></error><system-out><![CDATA[ running http_advanced.py
+starting profile http_advanced.py for duration 1
+ skipping http_by_l7_percent.py
+ running http_eflow.py
+starting profile http_eflow.py for duration 1
+ running http_eflow2.py
+starting profile http_eflow2.py for duration 1
+ skipping http_eflow3.py
+ running http_https.py
+starting profile http_https.py for duration 1
+ running http_manual_cli_tunable.py
+starting profile http_manual_cli_tunable.py for duration 1
+ running http_manual_commands.py
+starting profile http_manual_commands.py for duration 1
+ running http_manual_commands_connect_rst.py
+starting profile http_manual_commands_connect_rst.py for duration 1
+ running http_manual_commands_delay.py
+starting profile http_manual_commands_delay.py for duration 1
+ running http_manual_commands_delay_client.py
+starting profile http_manual_commands_delay_client.py for duration 1
+ running http_manual_commands_delay_client2.py
+starting profile http_manual_commands_delay_client2.py for duration 1
+ running http_manual_commands_delay_rand.py
+starting profile http_manual_commands_delay_rand.py for duration 1
+ running http_manual_commands_fin_ack.py
+starting profile http_manual_commands_fin_ack.py for duration 1
+ running http_manual_commands_loop.py
+starting profile http_manual_commands_loop.py for duration 1
+ running http_manual_commands_many_flows.py
+starting profile http_manual_commands_many_flows.py for duration 1
+ running http_manual_commands_pipeline.py
+starting profile http_manual_commands_pipeline.py for duration 1
+ running http_manual_commands_pipeline2.py
+starting profile http_manual_commands_pipeline2.py for duration 1
+ running http_manual_commands_pipeline3.py
+starting profile http_manual_commands_pipeline3.py for duration 1
+ running http_manual_commands_pipeline4.py
+starting profile http_manual_commands_pipeline4.py for duration 1
+ running http_manual_commands_rst.py
+starting profile http_manual_commands_rst.py for duration 1
+ running http_manual_tunable2.py
+starting profile http_manual_tunable2.py for duration 1
+ running http_manual_tunables.py
+starting profile http_manual_tunables.py for duration 1
+ running http_manual_tunables3.py
+starting profile http_manual_tunables3.py for duration 1
+ skipping http_manual_tunables4.py
+ running http_manual_tunables5.py
+starting profile http_manual_tunables5.py for duration 1
+ running http_simple.py
+starting profile http_simple.py for duration 1
+ running http_simple2.py
+starting profile http_simple2.py for duration 1
+ skipping http_simple_cc.py
+ skipping http_simple_cc1.py
+ running http_simple_different_ip_range.py
+starting profile http_simple_different_ip_range.py for duration 1
+ running http_simple_limit.py
+starting profile http_simple_limit.py for duration 1
+ skipping http_simple_rss.py
+ skipping sfr_full.py
+ running udp_pcap.py
+starting profile udp_pcap.py for duration 1
+ skipping http_simple_src_mac.py
+ skipping nginx_wget.py
+ running param_ipv6.py
+starting profile param_ipv6.py for duration 1
+ running param_ipv6_rss.py
+starting profile param_ipv6_rss.py for duration 1
+ running param_mss_err.py
+starting profile param_mss_err.py for duration 1
+ skipping param_mss_err2.py
+ running param_mss_initwnd.py
+starting profile param_mss_initwnd.py for duration 1
+ running http_simple_todd.py
+starting profile http_simple_todd.py for duration 1
+ running param_tcp_delay_ack.py
+starting profile param_tcp_delay_ack.py for duration 1
+ running param_tcp_keepalive.py
+starting profile param_tcp_keepalive.py for duration 1
+ running param_tcp_no_delay.py
+starting profile param_tcp_no_delay.py for duration 1
+ running param_tcp_no_timestamp.py
+starting profile param_tcp_no_timestamp.py for duration 1
+ running param_tcp_rxbufsize.py
+starting profile param_tcp_rxbufsize.py for duration 1
+ running param_tcp_rxbufsize_8k.py
+starting profile param_tcp_rxbufsize_8k.py for duration 1
+ running param_tcp_rxbufsize_pt.py
+starting profile param_tcp_rxbufsize_pt.py for duration 1
+ skipping sfr.py
+ running citrix_reverse.py
+starting profile citrix_reverse.py for duration 1
+ running sfr_single.py
+starting profile sfr_single.py for duration 1
+ running tcp_param_change.py
+starting profile tcp_param_change.py for duration 1
+ running udp1.py
+starting profile udp1.py for duration 1
+ running udp2.py
+starting profile udp2.py for duration 1
+ running udp_mix.py
+starting profile udp_mix.py for duration 1
+ running http_reverse2.py
+starting profile http_reverse2.py for duration 1
+ skipping udp_topo.py
+ skipping udp_topo_traffic.py
+ skipping http_simple_split.py
+ skipping http_simple_split_per_core.py
+ running http_simple_2_pools.py
+starting profile http_simple_2_pools.py for duration 1
+ skipping wrapping_it_up_example.py
+ running template_groups.py
+starting profile template_groups.py for duration 1
+ running ftp_multiple_flows_sim.py
+starting profile ftp_multiple_flows_sim.py for duration 1
+ running http_high_active_flows.py
+starting profile http_high_active_flows.py for duration 1
+delay 1
+ running http_manual_cli_tunable_4k.py
+starting profile http_manual_cli_tunable_4k.py for duration 1
+ running param_ip_tos_ttl_4.py
+starting profile param_ip_tos_ttl_4.py for duration 1
+ running res.py
+starting profile res.py for duration 1
+ running param_ip_tos_ttl_global.py
+starting profile param_ip_tos_ttl_global.py for duration 1
+ running param_ip_tos_ttl_pt.py
+starting profile param_ip_tos_ttl_pt.py for duration 1
+ running nat.py
+starting profile nat.py for duration 1
+ running param_sch_accurate.py
+starting profile param_sch_accurate.py for duration 1
+ running param_sch_rampup.py
+starting profile param_sch_rampup.py for duration 1
+ running sfr_full_2k.py
+starting profile sfr_full_2k.py for duration 1
+ running sfr_full_nat.py
+starting profile sfr_full_nat.py for duration 1
+ running todd.py
+starting profile todd.py for duration 1
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_profiles_dynamic_profile" time="91.118"><error type="trex.common.trex_exceptions.TRexError" message="Could not load profile: &#10;Python Traceback follows:&#10;&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py&quot;, line 90, in get_profile&#10;    return self.http1b_t()&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py&quot;, line 85, in http1b_t&#10;    profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)&#10;  File &quot;/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py&quot;, line 1622, in __init__&#10;    raise ASTFError(&quot;Two server template with port {}&quot;.format(port))&#10;ASTFError: &#10;******&#10;&#10;Exception stack (most recent call last):&#10;&#10;#3     trex_astf_profile.py:1768                          - 'profile = module.register().get_profile(**kwargs)'&#10;#2     todd.py:90                                         - 'return self.http1b_t()'&#10;#1     todd.py:85                                         - 'profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)'&#10;#0     trex_astf_profile.py:1622                          - 'raise ASTFError(&quot;Two server template with port {}&quot;.format(port))'&#10;&#10;Summary error message:&#10;&#10;Two server template with port 81&#10;&#10;"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 447, in test_astf_prof_profiles_dynamic_profile
+    self.run_astf_profile_dynamic_profile(fname, m=1, is_udp=False, is_tcp=False, ipv6 =False, check_counters=False, nc = True, pid_input=str(random_profile))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 248, in wrapped
+    func(self, *args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_profile_test.py", line 303, in run_astf_profile_dynamic_profile
+    c.load_profile(self.get_profile_by_name(profile_name),pid_input=pid_input)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 526, in load_profile
+    raise TRexError('Could not load profile: %s' % e)
+TRexError: Could not load profile: 
+Python Traceback follows:
+
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py", line 90, in get_profile
+    return self.http1b_t()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/astf/todd.py", line 85, in http1b_t
+    profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_profile.py", line 1622, in __init__
+    raise ASTFError("Two server template with port {}".format(port))
+ASTFError: 
+******
+
+Exception stack (most recent call last):
+
+#3     trex_astf_profile.py:1768                          - 'profile = module.register().get_profile(**kwargs)'
+#2     todd.py:90                                         - 'return self.http1b_t()'
+#1     todd.py:85                                         - 'profile = ASTFProfile(default_ip_gen=ip_gen, templates = [template1,template2], default_c_glob_info=info, default_s_glob_info=info)'
+#0     trex_astf_profile.py:1622                          - 'raise ASTFError("Two server template with port {}".format(port))'
+
+Summary error message:
+
+Two server template with port 81
+
+
+]]></error><system-out><![CDATA[ running http_advanced.py
+starting profile http_advanced.py for duration 1
+dynamic profile ytnaowwlza 
+ skipping http_by_l7_percent.py
+ running http_eflow.py
+starting profile http_eflow.py for duration 1
+dynamic profile zunwmyjaly 
+ running http_eflow2.py
+starting profile http_eflow2.py for duration 1
+dynamic profile ckkbrswuyz 
+ skipping http_eflow3.py
+ running http_https.py
+starting profile http_https.py for duration 1
+dynamic profile ejxloyaakf 
+ running http_manual_cli_tunable.py
+starting profile http_manual_cli_tunable.py for duration 1
+dynamic profile hhcwfgkdch 
+ running http_manual_commands.py
+starting profile http_manual_commands.py for duration 1
+dynamic profile zdzhctsycl 
+ running http_manual_commands_connect_rst.py
+starting profile http_manual_commands_connect_rst.py for duration 1
+dynamic profile tcsxjtrjvt 
+ running http_manual_commands_delay.py
+starting profile http_manual_commands_delay.py for duration 1
+dynamic profile xkeqodzpab 
+ running http_manual_commands_delay_client.py
+starting profile http_manual_commands_delay_client.py for duration 1
+dynamic profile vjjngchxxw 
+ running http_manual_commands_delay_client2.py
+starting profile http_manual_commands_delay_client2.py for duration 1
+dynamic profile wgiekmqfkj 
+ running http_manual_commands_delay_rand.py
+starting profile http_manual_commands_delay_rand.py for duration 1
+dynamic profile kipbczswnq 
+ running http_manual_commands_fin_ack.py
+starting profile http_manual_commands_fin_ack.py for duration 1
+dynamic profile paggcmjuel 
+ running http_manual_commands_loop.py
+starting profile http_manual_commands_loop.py for duration 1
+dynamic profile xzliejvrzb 
+ running http_manual_commands_many_flows.py
+starting profile http_manual_commands_many_flows.py for duration 1
+dynamic profile svgjpyurgo 
+ running http_manual_commands_pipeline.py
+starting profile http_manual_commands_pipeline.py for duration 1
+dynamic profile uwrqybwely 
+ running http_manual_commands_pipeline2.py
+starting profile http_manual_commands_pipeline2.py for duration 1
+dynamic profile abimwkfeux 
+ running http_manual_commands_pipeline3.py
+starting profile http_manual_commands_pipeline3.py for duration 1
+dynamic profile qrqxvmfirb 
+ running http_manual_commands_pipeline4.py
+starting profile http_manual_commands_pipeline4.py for duration 1
+dynamic profile hhefcbglbp 
+ running http_manual_commands_rst.py
+starting profile http_manual_commands_rst.py for duration 1
+dynamic profile qplftixyrt 
+ running http_manual_tunable2.py
+starting profile http_manual_tunable2.py for duration 1
+dynamic profile apvublbirs 
+ running http_manual_tunables.py
+starting profile http_manual_tunables.py for duration 1
+dynamic profile lvccdbsjrp 
+ running http_manual_tunables3.py
+starting profile http_manual_tunables3.py for duration 1
+dynamic profile vdeebxferr 
+ skipping http_manual_tunables4.py
+ running http_manual_tunables5.py
+starting profile http_manual_tunables5.py for duration 1
+dynamic profile irgujqaajl 
+ running http_simple.py
+starting profile http_simple.py for duration 1
+dynamic profile brsmoajeiy 
+ running http_simple2.py
+starting profile http_simple2.py for duration 1
+dynamic profile hcapsyckur 
+ skipping http_simple_cc.py
+ skipping http_simple_cc1.py
+ running http_simple_different_ip_range.py
+starting profile http_simple_different_ip_range.py for duration 1
+dynamic profile yqiidpfvwn 
+ running http_simple_limit.py
+starting profile http_simple_limit.py for duration 1
+dynamic profile uxwgilbddo 
+ skipping http_simple_rss.py
+ skipping sfr_full.py
+ running udp_pcap.py
+starting profile udp_pcap.py for duration 1
+dynamic profile xvnzbjyozz 
+ skipping http_simple_src_mac.py
+ skipping nginx_wget.py
+ running param_ipv6.py
+starting profile param_ipv6.py for duration 1
+dynamic profile lgfqetpzck 
+ running param_ipv6_rss.py
+starting profile param_ipv6_rss.py for duration 1
+dynamic profile qzaoqjtkea 
+ running param_mss_err.py
+starting profile param_mss_err.py for duration 1
+dynamic profile woduakgptm 
+ skipping param_mss_err2.py
+ running param_mss_initwnd.py
+starting profile param_mss_initwnd.py for duration 1
+dynamic profile umnzzbhsso 
+ running http_simple_todd.py
+starting profile http_simple_todd.py for duration 1
+dynamic profile ycwuxnubvu 
+ running param_tcp_delay_ack.py
+starting profile param_tcp_delay_ack.py for duration 1
+dynamic profile svzjmpbtou 
+ running param_tcp_keepalive.py
+starting profile param_tcp_keepalive.py for duration 1
+dynamic profile romkrasgvi 
+ running param_tcp_no_delay.py
+starting profile param_tcp_no_delay.py for duration 1
+dynamic profile bjdmpgfagt 
+ running param_tcp_no_timestamp.py
+starting profile param_tcp_no_timestamp.py for duration 1
+dynamic profile iupehmbtfq 
+ running param_tcp_rxbufsize.py
+starting profile param_tcp_rxbufsize.py for duration 1
+dynamic profile hwxtaosegq 
+ running param_tcp_rxbufsize_8k.py
+starting profile param_tcp_rxbufsize_8k.py for duration 1
+dynamic profile ipavtdopsb 
+ running param_tcp_rxbufsize_pt.py
+starting profile param_tcp_rxbufsize_pt.py for duration 1
+dynamic profile npkvumlbjm 
+ skipping sfr.py
+ running citrix_reverse.py
+starting profile citrix_reverse.py for duration 1
+dynamic profile hrkbhpxqiv 
+ running sfr_single.py
+starting profile sfr_single.py for duration 1
+dynamic profile npcjhtnsvf 
+ running tcp_param_change.py
+starting profile tcp_param_change.py for duration 1
+dynamic profile uqvvelbgye 
+ running udp1.py
+starting profile udp1.py for duration 1
+dynamic profile dcxdqowtnt 
+ running udp2.py
+starting profile udp2.py for duration 1
+dynamic profile puiftwrvcg 
+ running udp_mix.py
+starting profile udp_mix.py for duration 1
+dynamic profile ndjoduwugx 
+ running http_reverse2.py
+starting profile http_reverse2.py for duration 1
+dynamic profile bbaqlhbxdj 
+ skipping udp_topo.py
+ skipping udp_topo_traffic.py
+ skipping http_simple_split.py
+ skipping http_simple_split_per_core.py
+ running http_simple_2_pools.py
+starting profile http_simple_2_pools.py for duration 1
+dynamic profile qchqnkneth 
+ skipping wrapping_it_up_example.py
+ running template_groups.py
+starting profile template_groups.py for duration 1
+dynamic profile rrqesqdtsz 
+ running ftp_multiple_flows_sim.py
+starting profile ftp_multiple_flows_sim.py for duration 1
+dynamic profile efymflqkqi 
+ running http_high_active_flows.py
+starting profile http_high_active_flows.py for duration 1
+dynamic profile eljbeshacs 
+delay 1
+ running http_manual_cli_tunable_4k.py
+starting profile http_manual_cli_tunable_4k.py for duration 1
+dynamic profile locbxbvvnf 
+ running param_ip_tos_ttl_4.py
+starting profile param_ip_tos_ttl_4.py for duration 1
+dynamic profile drteahxoxy 
+ running res.py
+starting profile res.py for duration 1
+dynamic profile nxhtvsajxu 
+ running param_ip_tos_ttl_global.py
+starting profile param_ip_tos_ttl_global.py for duration 1
+dynamic profile ytxpjmrylu 
+ running param_ip_tos_ttl_pt.py
+starting profile param_ip_tos_ttl_pt.py for duration 1
+dynamic profile tdogsicook 
+ running nat.py
+starting profile nat.py for duration 1
+dynamic profile pqcexlyzng 
+ running param_sch_accurate.py
+starting profile param_sch_accurate.py for duration 1
+dynamic profile goipvkvlug 
+ running param_sch_rampup.py
+starting profile param_sch_rampup.py for duration 1
+dynamic profile bdzxxgolwc 
+ running sfr_full_2k.py
+starting profile sfr_full_2k.py for duration 1
+dynamic profile ulunebcyjq 
+ running sfr_full_nat.py
+starting profile sfr_full_nat.py for duration 1
+dynamic profile scxniwsdbb 
+ running todd.py
+starting profile todd.py for duration 1
+dynamic profile afwgrizpes 
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_sfr" time="154.406"><system-out><![CDATA[starting profile sfr.py for duration 24
+starting profile sfr_full.py for duration 60
+]]></system-out></testcase><testcase classname="astf_tests.astf_profile_test.ASTFProfile_Test" name="test_astf_prof_simple" time="170.935"><system-out><![CDATA[starting profile http_simple.py for duration 21
+starting profile udp_pcap.py for duration 29
+starting profile http_simple.py for duration 54
+starting profile udp_pcap.py for duration 56
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_a_stress_double_start_stop" time="0.192"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_a_stress_double_start_stop_dynamic_profile" time="0.210"><system-out><![CDATA[
+Dynamic profile(1) : zfcilenekw
+Dynamic profile(2) : nnmolfvfma
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_a_stress_start_stop" time="3.604"><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_a_stress_start_stop_dynamic_profile" time="79.579"><system-out><![CDATA[
+Dynamic profile added : trzwcdwzpy
+Port added : 9000
+Dynamic profile added : fimfrnewcm
+Port added : 9001
+Dynamic profile added : bjnshlwrff
+Port added : 9002
+Dynamic profile added : mwjmgkkcrl
+Port added : 9003
+Dynamic profile added : wrluutojly
+Port added : 9004
+Dynamic profile added : uzxdgnzazr
+Port added : 9005
+Dynamic profile added : pwixzowagb
+Port added : 9006
+Dynamic profile added : xebfbuzcdk
+Port added : 9007
+Dynamic profile added : htgjltkwvd
+Port added : 9008
+Dynamic profile added : hcqifzemqo
+Port added : 9009
+Dynamic profile added : sducedxvlk
+Port added : 9010
+Dynamic profile added : ubhnsejfts
+Port added : 9011
+Dynamic profile added : mwacuddqqk
+Port added : 9012
+Dynamic profile added : eoitlibmnm
+Port added : 9013
+Dynamic profile added : eoftlbgfti
+Port added : 9014
+Dynamic profile added : rcprynpzpb
+Port added : 9015
+Dynamic profile added : gvqreegwed
+Port added : 9016
+Dynamic profile added : oofoqfczxl
+Port added : 9017
+Dynamic profile added : iaarrxqmky
+Port added : 9018
+Dynamic profile added : oitlpkgafp
+Port added : 9019
+Dynamic profile added : xzkwxhfamr
+Port added : 9020
+Dynamic profile added : sqpgwiwuzh
+Port added : 9021
+Dynamic profile added : hkqaalnvgw
+Port added : 9022
+Dynamic profile added : wiaijfdkwf
+Port added : 9023
+Dynamic profile added : mslxpmrkvl
+Port added : 9024
+Dynamic profile added : hnwgsdbozg
+Port added : 9025
+Dynamic profile added : rzyazdxhrt
+Port added : 9026
+Dynamic profile added : viysmbabpx
+Port added : 9027
+Dynamic profile added : pwskfbdcep
+Port added : 9028
+Dynamic profile added : jxipikvfkh
+Port added : 9029
+Dynamic profile added : jnvkfbchtg
+Port added : 9030
+Dynamic profile added : vcatoljrzr
+Port added : 9031
+Dynamic profile added : muhjhapnwy
+Port added : 9032
+Dynamic profile added : gpltqixmdh
+Port added : 9033
+Dynamic profile added : muodubkcxl
+Port added : 9034
+Dynamic profile added : ofctxyygzg
+Port added : 9035
+Dynamic profile added : zavunkoiry
+Port added : 9036
+Dynamic profile added : uhhjgerkzo
+Port added : 9037
+Dynamic profile added : wdivvshxsh
+Port added : 9038
+Dynamic profile added : ojbcxszufq
+Port added : 9039
+Dynamic profile added : ysnksicazz
+Port added : 9040
+Dynamic profile added : puyzqrsret
+Port added : 9041
+Dynamic profile added : mwabbmlkls
+Port added : 9042
+Dynamic profile added : erjrnlzvhf
+Port added : 9043
+Dynamic profile added : thvojsuuln
+Port added : 9044
+Dynamic profile added : ipwpdxwqoo
+Port added : 9045
+Dynamic profile added : vsscgeijwm
+Port added : 9046
+Dynamic profile added : ucvtdyebhv
+Port added : 9047
+Dynamic profile added : molcoetvlf
+Port added : 9048
+Dynamic profile added : rckkfvkbph
+Port added : 9049
+Dynamic profile added : jwtjaaqbkv
+Port added : 9050
+Dynamic profile added : lxxrczoecd
+Port added : 9051
+Dynamic profile added : pbbvrlqagl
+Port added : 9052
+Dynamic profile added : azrmfqpuxn
+Port added : 9053
+Dynamic profile added : pdhvwraoae
+Port added : 9054
+Dynamic profile added : mbyhqmyreo
+Port added : 9055
+Dynamic profile added : psdqhidkrj
+Port added : 9056
+Dynamic profile added : xbdcytyhyq
+Port added : 9057
+Dynamic profile added : oalhszjwnu
+Port added : 9058
+Dynamic profile added : nnhyefbccj
+Port added : 9059
+Dynamic profile added : lilvqizcff
+Port added : 9060
+Dynamic profile added : lmmpxzcqpn
+Port added : 9061
+Dynamic profile added : gzcytrgmkr
+Port added : 9062
+Dynamic profile added : jyzjyspyyz
+Port added : 9063
+Dynamic profile added : yenemoooit
+Port added : 9064
+Dynamic profile added : teuzkppcpx
+Port added : 9065
+Dynamic profile added : hqjpoeezjz
+Port added : 9066
+Dynamic profile added : appiuezlnf
+Port added : 9067
+Dynamic profile added : xomiabntok
+Port added : 9068
+Dynamic profile added : kjjdutmsmx
+Port added : 9069
+Dynamic profile added : bjaumjsnvg
+Port added : 9070
+Dynamic profile added : svvxwltgfx
+Port added : 9071
+Dynamic profile added : uksfbkexsv
+Port added : 9072
+Dynamic profile added : nlaqjyukth
+Port added : 9073
+Dynamic profile added : ibvvvsezyk
+Port added : 9074
+Dynamic profile added : ljkvbymeyk
+Port added : 9075
+Dynamic profile added : oomyotesnz
+Port added : 9076
+Dynamic profile added : urawaxjmbz
+Port added : 9077
+Dynamic profile added : arafeqwjdj
+Port added : 9078
+Dynamic profile added : xlzyrzoeay
+Port added : 9079
+Dynamic profile added : uptgpgxity
+Port added : 9080
+Dynamic profile added : nrbkgzxunf
+Port added : 9081
+Dynamic profile added : jhbidznjvm
+Port added : 9082
+Dynamic profile added : izmnpcwejn
+Port added : 9083
+Dynamic profile added : gqumejepns
+Port added : 9084
+Dynamic profile added : rdiibwvnkc
+Port added : 9085
+Dynamic profile added : fqamjmdido
+Port added : 9086
+Dynamic profile added : rrjbnjvjaq
+Port added : 9087
+Dynamic profile added : gtpjnkvjnb
+Port added : 9088
+Dynamic profile added : hxjdpqzxhw
+Port added : 9089
+Dynamic profile added : hngqtvgjgn
+Port added : 9090
+Dynamic profile added : nlcyigptmz
+Port added : 9091
+Dynamic profile added : vxoakmcqqh
+Port added : 9092
+Dynamic profile added : kmljeneexu
+Port added : 9093
+Dynamic profile added : sihheoldib
+Port added : 9094
+Dynamic profile added : bydlcnmxcg
+Port added : 9095
+Dynamic profile added : ovkcaofdbv
+Port added : 9096
+Dynamic profile added : ediulvigvw
+Port added : 9097
+Dynamic profile added : ybjbxmkceo
+Port added : 9098
+Dynamic profile added : afxrmjdvxq
+Port added : 9099
+Dynamic profile added : zrgpknsvot
+Port added : 9100
+Dynamic profile added : lhgtjnjbly
+Port added : 9101
+Dynamic profile added : fcafrmxvsc
+Port added : 9102
+Dynamic profile added : hznmtifhca
+Port added : 9103
+Dynamic profile added : laxxexgmgj
+Port added : 9104
+Dynamic profile added : yyplhbhirv
+Port added : 9105
+Dynamic profile added : iomxiujroj
+Port added : 9106
+Dynamic profile added : tdfoqzlkca
+Port added : 9107
+Dynamic profile added : nvqzjapazi
+Port added : 9108
+Dynamic profile added : jnndyeinlv
+Port added : 9109
+Dynamic profile added : obsgcewncs
+Port added : 9110
+Dynamic profile added : bkxhwownuw
+Port added : 9111
+Dynamic profile added : dgwscwnucp
+Port added : 9112
+Dynamic profile added : wwumjerntv
+Port added : 9113
+Dynamic profile added : fqzajohmdt
+Port added : 9114
+Dynamic profile added : utijettnqn
+Port added : 9115
+Dynamic profile added : eovqbnxaiv
+Port added : 9116
+Dynamic profile added : yyvvhpidoq
+Port added : 9117
+Dynamic profile added : hjerpnymus
+Port added : 9118
+Dynamic profile added : cdeicsgeid
+Port added : 9119
+Dynamic profile added : igaueigoha
+Port added : 9120
+Dynamic profile added : bekaxyphuj
+Port added : 9121
+Dynamic profile added : gzkwbixxes
+Port added : 9122
+Dynamic profile added : uvbvdskixe
+Port added : 9123
+Dynamic profile added : wtrzjhffru
+Port added : 9124
+Dynamic profile added : zncqncbuxb
+Port added : 9125
+Dynamic profile added : xperaubekw
+Port added : 9126
+Dynamic profile added : dbrpuirqnh
+Port added : 9127
+Dynamic profile added : rkkmlvykwy
+Port added : 9128
+Dynamic profile added : hevxhlutgf
+Port added : 9129
+Dynamic profile added : lyltuebaak
+Port added : 9130
+Dynamic profile added : wwbboqhpvz
+Port added : 9131
+Dynamic profile added : gdiixvzcwj
+Port added : 9132
+Dynamic profile added : kblpjahuyj
+Port added : 9133
+Dynamic profile added : hfuryyednd
+Port added : 9134
+Dynamic profile added : vmeaecfvny
+Port added : 9135
+Dynamic profile added : dxedmpmily
+Port added : 9136
+Dynamic profile added : vwjhovhbbb
+Port added : 9137
+Dynamic profile added : lpvtweevsp
+Port added : 9138
+Dynamic profile added : mrygrpysqh
+Port added : 9139
+Dynamic profile added : snkvfxlsnl
+Port added : 9140
+Dynamic profile added : qrnpyfbpyt
+Port added : 9141
+Dynamic profile added : qynjfgsdwe
+Port added : 9142
+Dynamic profile added : twcffdmaml
+Port added : 9143
+Dynamic profile added : phymdccpfb
+Port added : 9144
+Dynamic profile added : bcezjrflfo
+Port added : 9145
+Dynamic profile added : vgylqaoxex
+Port added : 9146
+Dynamic profile added : oyrdbujrep
+Port added : 9147
+Dynamic profile added : rvpewxgyiv
+Port added : 9148
+Dynamic profile added : rnphwhmlys
+Port added : 9149
+Dynamic profile added : mdqljvvmbb
+Port added : 9150
+Dynamic profile added : ynqvlnpjjb
+Port added : 9151
+Dynamic profile added : uxckfvrgvx
+Port added : 9152
+Dynamic profile added : diufwwcpbw
+Port added : 9153
+Dynamic profile added : ajcxfywhar
+Port added : 9154
+Dynamic profile added : cgnqodadxo
+Port added : 9155
+Dynamic profile added : iqnfmirwhl
+Port added : 9156
+Dynamic profile added : zpzvdxjzgs
+Port added : 9157
+Dynamic profile added : owkgwxjgib
+Port added : 9158
+Dynamic profile added : lerxpmofdt
+Port added : 9159
+Dynamic profile added : qyabhuclni
+Port added : 9160
+Dynamic profile added : jcxhdqisjb
+Port added : 9161
+Dynamic profile added : bqagqyaksc
+Port added : 9162
+Dynamic profile added : viqrkwhdrt
+Port added : 9163
+Dynamic profile added : bfoikbkntu
+Port added : 9164
+Dynamic profile added : hfogxcnoug
+Port added : 9165
+Dynamic profile added : crqxgmsqvm
+Port added : 9166
+Dynamic profile added : koqatxajxk
+Port added : 9167
+Dynamic profile added : gzwunhzczr
+Port added : 9168
+Dynamic profile added : gpuorshcrf
+Port added : 9169
+Dynamic profile added : yktamvpudd
+Port added : 9170
+Dynamic profile added : dgufduxiks
+Port added : 9171
+Dynamic profile added : ixexgzbuuf
+Port added : 9172
+Dynamic profile added : beczufvwfu
+Port added : 9173
+Dynamic profile added : jrdueogtef
+Port added : 9174
+Dynamic profile added : bbkcebjqnv
+Port added : 9175
+Dynamic profile added : hegjtuapce
+Port added : 9176
+Dynamic profile added : cgtftehyky
+Port added : 9177
+Dynamic profile added : pdjocbzhzb
+Port added : 9178
+Dynamic profile added : wqjfjginlm
+Port added : 9179
+Dynamic profile added : febpcmbqev
+Port added : 9180
+Dynamic profile added : geibuchcip
+Port added : 9181
+Dynamic profile added : jgpehuslqh
+Port added : 9182
+Dynamic profile added : tjrhjwnued
+Port added : 9183
+Dynamic profile added : gchivatjkx
+Port added : 9184
+Dynamic profile added : fagpotudal
+Port added : 9185
+Dynamic profile added : zfciweujmv
+Port added : 9186
+Dynamic profile added : owjsphhhdk
+Port added : 9187
+Dynamic profile added : dhetlujymj
+Port added : 9188
+Dynamic profile added : abojkkbybq
+Port added : 9189
+Dynamic profile added : avfswpflha
+Port added : 9190
+Dynamic profile added : iklfshdtph
+Port added : 9191
+Dynamic profile added : hkuqiorvjk
+Port added : 9192
+Dynamic profile added : xqewboqpjx
+Port added : 9193
+Dynamic profile added : moecbmpctz
+Port added : 9194
+Dynamic profile added : ptvwyxhfkl
+Port added : 9195
+Dynamic profile added : lgkfcxoigy
+Port added : 9196
+Dynamic profile added : ejnipgfvuo
+Port added : 9197
+Dynamic profile added : szwnsqsbor
+Port added : 9198
+Dynamic profile added : yssztcaich
+Port added : 9199
+Dynamic profile added : spkcebvrca
+Port added : 9200
+Dynamic profile added : vfticaqbbd
+Port added : 9201
+Dynamic profile added : fekiklglyv
+Port added : 9202
+Dynamic profile added : xuypgskyjt
+Port added : 9203
+Dynamic profile added : vxrvolvjxi
+Port added : 9204
+Dynamic profile added : psotbmozpt
+Port added : 9205
+Dynamic profile added : zgvjrgtdrl
+Port added : 9206
+Dynamic profile added : prommsxnon
+Port added : 9207
+Dynamic profile added : fphnaeljpu
+Port added : 9208
+Dynamic profile added : eqshzktcrv
+Port added : 9209
+Dynamic profile added : hgfottpgen
+Port added : 9210
+Dynamic profile added : jttxsldhuo
+Port added : 9211
+Dynamic profile added : zifuneqyht
+Port added : 9212
+Dynamic profile added : zpyfmcpzvu
+Port added : 9213
+Dynamic profile added : xtcpsnvoua
+Port added : 9214
+Dynamic profile added : fppfltsxui
+Port added : 9215
+Dynamic profile added : cqemajzujm
+Port added : 9216
+Dynamic profile added : ihegfjofso
+Port added : 9217
+Dynamic profile added : kjfaabwcuw
+Port added : 9218
+Dynamic profile added : tdcfpcdxtt
+Port added : 9219
+Dynamic profile added : qmimemaqif
+Port added : 9220
+Dynamic profile added : drtoxodxsl
+Port added : 9221
+Dynamic profile added : aqhkvxofag
+Port added : 9222
+Dynamic profile added : hhjvzpzias
+Port added : 9223
+Dynamic profile added : vkinucmcrt
+Port added : 9224
+Dynamic profile added : rldpzvdjnv
+Port added : 9225
+Dynamic profile added : lhojylpdve
+Port added : 9226
+Dynamic profile added : fmnmolnrjx
+Port added : 9227
+Dynamic profile added : jcofrniadg
+Port added : 9228
+Dynamic profile added : kyakezgant
+Port added : 9229
+Dynamic profile added : przlmrygkd
+Port added : 9230
+Dynamic profile added : btuxxfadib
+Port added : 9231
+Dynamic profile added : slttfsepkv
+Port added : 9232
+Dynamic profile added : qfuqjglrbc
+Port added : 9233
+Dynamic profile added : zovhjzujri
+Port added : 9234
+Dynamic profile added : ztojagnpqh
+Port added : 9235
+Dynamic profile added : yehtsqfcgi
+Port added : 9236
+Dynamic profile added : mpsbwukdbj
+Port added : 9237
+Dynamic profile added : wmnopdjaet
+Port added : 9238
+Dynamic profile added : gxemztvbkl
+Port added : 9239
+Dynamic profile added : didwjukcso
+Port added : 9240
+Dynamic profile added : aoftvitvql
+Port added : 9241
+Dynamic profile added : jtbbnkffwc
+Port added : 9242
+Dynamic profile added : cbgfulosah
+Port added : 9243
+Dynamic profile added : jpabmkhgoh
+Port added : 9244
+Dynamic profile added : mtatipugit
+Port added : 9245
+Dynamic profile added : lqzhygtpfy
+Port added : 9246
+Dynamic profile added : udwlcjvhpp
+Port added : 9247
+Dynamic profile added : utzerrspdh
+Port added : 9248
+Dynamic profile added : hkcqefhgfx
+Port added : 9249
+Dynamic profile added : domxnwqsol
+Port added : 9250
+Dynamic profile added : xmbykzkddq
+Port added : 9251
+Dynamic profile added : bfdmsqgdxc
+Port added : 9252
+Dynamic profile added : jixllsnblb
+Port added : 9253
+Dynamic profile added : ssakningap
+Port added : 9254
+Dynamic profile added : cfopijsvxw
+Port added : 9255
+Dynamic profile added : citbnqmwpk
+Port added : 9256
+Dynamic profile added : vxcovdxzgi
+Port added : 9257
+Dynamic profile added : zswelfmosy
+Port added : 9258
+Dynamic profile added : iuxjhhtuoy
+Port added : 9259
+Dynamic profile added : bbnicfwmgg
+Port added : 9260
+Dynamic profile added : apqhrornyp
+Port added : 9261
+Dynamic profile added : obgqvpfafp
+Port added : 9262
+Dynamic profile added : dsqmaocmdf
+Port added : 9263
+Dynamic profile added : fnvvrprylh
+Port added : 9264
+Dynamic profile added : wvjbohzphx
+Port added : 9265
+Dynamic profile added : qjywdjknef
+Port added : 9266
+Dynamic profile added : vrzrzydwjg
+Port added : 9267
+Dynamic profile added : bdbxhuuuxx
+Port added : 9268
+Dynamic profile added : rzttrtbast
+Port added : 9269
+Dynamic profile added : pskwaxssph
+Port added : 9270
+Dynamic profile added : uasghebzoo
+Port added : 9271
+Dynamic profile added : dczrkvzgqw
+Port added : 9272
+Dynamic profile added : svjbulofor
+Port added : 9273
+Dynamic profile added : wkcffpiwms
+Port added : 9274
+Dynamic profile added : rgmjjwrqrs
+Port added : 9275
+Dynamic profile added : sphgtmzuyo
+Port added : 9276
+Dynamic profile added : tumdggecpb
+Port added : 9277
+Dynamic profile added : lpozyuhtbv
+Port added : 9278
+Dynamic profile added : koxfaaxpeg
+Port added : 9279
+Dynamic profile added : igigcfyeab
+Port added : 9280
+Dynamic profile added : qvcgxyejrn
+Port added : 9281
+Dynamic profile added : bwfsqoogcy
+Port added : 9282
+Dynamic profile added : cdboyfxjfw
+Port added : 9283
+Dynamic profile added : aaqvvqnkvt
+Port added : 9284
+Dynamic profile added : omcbipsguo
+Port added : 9285
+Dynamic profile added : mannezdunr
+Port added : 9286
+Dynamic profile added : zuoekrdrem
+Port added : 9287
+Dynamic profile added : whwgdbheff
+Port added : 9288
+Dynamic profile added : zrqczjwtid
+Port added : 9289
+Dynamic profile added : vqymvvveel
+Port added : 9290
+Dynamic profile added : uqlwljmluo
+Port added : 9291
+Dynamic profile added : wayisbgglp
+Port added : 9292
+Dynamic profile added : zythugciio
+Port added : 9293
+Dynamic profile added : drnlwsiqwn
+Port added : 9294
+Dynamic profile added : dfrqdlagiq
+Port added : 9295
+Dynamic profile added : zgygibxcja
+Port added : 9296
+Dynamic profile added : qsdqqqpchx
+Port added : 9297
+Dynamic profile added : qeujanolfb
+Port added : 9298
+Dynamic profile added : gqrtgzssci
+Port added : 9299
+Dynamic profile added : vrqeywzvbp
+Port added : 9300
+Dynamic profile added : zvmtgwcokw
+Port added : 9301
+Dynamic profile added : jlqgxbypge
+Port added : 9302
+Dynamic profile added : sxgbmardfi
+Port added : 9303
+Dynamic profile added : iuibggpkuz
+Port added : 9304
+Dynamic profile added : kakrhjjxij
+Port added : 9305
+Dynamic profile added : acftynywxk
+Port added : 9306
+Dynamic profile added : oizkburzsp
+Port added : 9307
+Dynamic profile added : wlrnjhgkrw
+Port added : 9308
+Dynamic profile added : ilcpmfhzza
+Port added : 9309
+Dynamic profile added : sacjvbtgms
+Port added : 9310
+Dynamic profile added : xxzauqefsu
+Port added : 9311
+Dynamic profile added : bzlegouwox
+Port added : 9312
+Dynamic profile added : cpekadsquz
+Port added : 9313
+Dynamic profile added : zgoevtyqxw
+Port added : 9314
+Dynamic profile added : bhwczosqsa
+Port added : 9315
+Dynamic profile added : whumkhdnzm
+Port added : 9316
+Dynamic profile added : mmjsajqnro
+Port added : 9317
+Dynamic profile added : qzfsmmaqby
+Port added : 9318
+Dynamic profile added : dcidydkczm
+Port added : 9319
+Dynamic profile added : pyztjrdqno
+Port added : 9320
+Dynamic profile added : foxpjirarn
+Port added : 9321
+Dynamic profile added : sqhiwhqksa
+Port added : 9322
+Dynamic profile added : zhulnakwwn
+Port added : 9323
+Dynamic profile added : eoxcmpkcec
+Port added : 9324
+Dynamic profile added : kzqqcwtfed
+Port added : 9325
+Dynamic profile added : viocjlxbic
+Port added : 9326
+Dynamic profile added : pxldrbbqis
+Port added : 9327
+Dynamic profile added : fnwketbgbp
+Port added : 9328
+Dynamic profile added : jrmrqzfsrn
+Port added : 9329
+Dynamic profile added : qcagdgvegj
+Port added : 9330
+Dynamic profile added : vgojcymjvt
+Port added : 9331
+Dynamic profile added : qnqssesmcy
+Port added : 9332
+Dynamic profile added : fpmndowlym
+Port added : 9333
+Dynamic profile added : kpwhjjivtj
+Port added : 9334
+Dynamic profile added : kksccpfqkl
+Port added : 9335
+Dynamic profile added : cdxpguqjlb
+Port added : 9336
+Dynamic profile added : gpwvgwrfwg
+Port added : 9337
+Dynamic profile added : mpfhuirbxm
+Port added : 9338
+Dynamic profile added : kjyjojstdb
+Port added : 9339
+Dynamic profile added : ygozjjelra
+Port added : 9340
+Dynamic profile added : mlxglmbivj
+Port added : 9341
+Dynamic profile added : jhtziaietu
+Port added : 9342
+Dynamic profile added : mdyouueekv
+Port added : 9343
+Dynamic profile added : foclchcrld
+Port added : 9344
+Dynamic profile added : elydgvddrs
+Port added : 9345
+Dynamic profile added : fskbttwzrk
+Port added : 9346
+Dynamic profile added : rxoeeeigvc
+Port added : 9347
+Dynamic profile added : izjmiutigk
+Port added : 9348
+Dynamic profile added : zgzbfxbero
+Port added : 9349
+Dynamic profile added : upfkzcqqne
+Port added : 9350
+Dynamic profile added : gpzsabyxeo
+Port added : 9351
+Dynamic profile added : zznhtqkqxk
+Port added : 9352
+Dynamic profile added : hcuoavlzzd
+Port added : 9353
+Dynamic profile added : yvoabhvavt
+Port added : 9354
+Dynamic profile added : vasrzrohmt
+Port added : 9355
+Dynamic profile added : fzjihwiueg
+Port added : 9356
+Dynamic profile added : jamcevmvda
+Port added : 9357
+Dynamic profile added : zdrzqeuavn
+Port added : 9358
+Dynamic profile added : hcyycqeawn
+Port added : 9359
+Dynamic profile added : iyjnpemiuo
+Port added : 9360
+Dynamic profile added : gtzjjhjoyr
+Port added : 9361
+Dynamic profile added : riouelbouu
+Port added : 9362
+Dynamic profile added : bltjkvbztf
+Port added : 9363
+Dynamic profile added : cownubpejx
+Port added : 9364
+Dynamic profile added : uegugswdzf
+Port added : 9365
+Dynamic profile added : dxjszstcku
+Port added : 9366
+Dynamic profile added : frvovrrhtl
+Port added : 9367
+Dynamic profile added : roplfagqad
+Port added : 9368
+Dynamic profile added : ltdbpyaihs
+Port added : 9369
+Dynamic profile added : yyovinferj
+Port added : 9370
+Dynamic profile added : iekizzzdtt
+Port added : 9371
+Dynamic profile added : gqwbfiipsm
+Port added : 9372
+Dynamic profile added : jevotrgjor
+Port added : 9373
+Dynamic profile added : olbbwoisrp
+Port added : 9374
+Dynamic profile added : veoivikozn
+Port added : 9375
+Dynamic profile added : eqdbvhetic
+Port added : 9376
+Dynamic profile added : cwgrhqcngx
+Port added : 9377
+Dynamic profile added : zugheobroi
+Port added : 9378
+Dynamic profile added : kwtiatryic
+Port added : 9379
+Dynamic profile added : nskxfxgauf
+Port added : 9380
+Dynamic profile added : ipsnnjmdom
+Port added : 9381
+Dynamic profile added : vmbirjatmm
+Port added : 9382
+Dynamic profile added : senxyikfnc
+Port added : 9383
+Dynamic profile added : gsmbzqnejk
+Port added : 9384
+Dynamic profile added : yrcweeghau
+Port added : 9385
+Dynamic profile added : eerbavsmvb
+Port added : 9386
+Dynamic profile added : jbfnusssoe
+Port added : 9387
+Dynamic profile added : eilngqydhl
+Port added : 9388
+Dynamic profile added : ounhatbxbm
+Port added : 9389
+Dynamic profile added : hakugigwxp
+Port added : 9390
+Dynamic profile added : kkrfwrwacg
+Port added : 9391
+Dynamic profile added : mcvmhpvtuw
+Port added : 9392
+Dynamic profile added : bqaczrnshx
+Port added : 9393
+Dynamic profile added : slbidxvzbm
+Port added : 9394
+Dynamic profile added : pwlrdoypun
+Port added : 9395
+Dynamic profile added : saxdrkocyr
+Port added : 9396
+Dynamic profile added : otnkcrjtnr
+Port added : 9397
+Dynamic profile added : lznopfbnmw
+Port added : 9398
+Dynamic profile added : xxrqlksvoa
+Port added : 9399
+Dynamic profile added : jdprvnhgih
+Port added : 9400
+Dynamic profile added : amhwejfoqh
+Port added : 9401
+Dynamic profile added : zucywzvpzd
+Port added : 9402
+Dynamic profile added : mfkslodjmy
+Port added : 9403
+Dynamic profile added : clbfmxxsiq
+Port added : 9404
+Dynamic profile added : gorjrfmyws
+Port added : 9405
+Dynamic profile added : bpywzpwuyo
+Port added : 9406
+Dynamic profile added : xeppkotwes
+Port added : 9407
+Dynamic profile added : riwfeatwxm
+Port added : 9408
+Dynamic profile added : qphmadzvck
+Port added : 9409
+Dynamic profile added : bjrmztilkc
+Port added : 9410
+Dynamic profile added : ezmiwyscww
+Port added : 9411
+Dynamic profile added : joagnosleq
+Port added : 9412
+Dynamic profile added : quqwesqesh
+Port added : 9413
+Dynamic profile added : nsrdnqyiih
+Port added : 9414
+Dynamic profile added : jbicwwimjd
+Port added : 9415
+Dynamic profile added : jhttnwdfue
+Port added : 9416
+Dynamic profile added : jspptrvksn
+Port added : 9417
+Dynamic profile added : cudqpqhmbg
+Port added : 9418
+Dynamic profile added : evtynwnukj
+Port added : 9419
+Dynamic profile added : ixdmyqnqjb
+Port added : 9420
+Dynamic profile added : oghmyeohth
+Port added : 9421
+Dynamic profile added : frkhtvmsni
+Port added : 9422
+Dynamic profile added : tnttgopkhd
+Port added : 9423
+Dynamic profile added : jhjmhfencx
+Port added : 9424
+Dynamic profile added : ntjrumwqhp
+Port added : 9425
+Dynamic profile added : ogoqvhiofr
+Port added : 9426
+Dynamic profile added : pcctxensie
+Port added : 9427
+Dynamic profile added : vpnlnwudvb
+Port added : 9428
+Dynamic profile added : mdoxsshnjb
+Port added : 9429
+Dynamic profile added : efsqidlqaa
+Port added : 9430
+Dynamic profile added : mpfxljxamj
+Port added : 9431
+Dynamic profile added : yffjvnrubb
+Port added : 9432
+Dynamic profile added : ktimxtqnvj
+Port added : 9433
+Dynamic profile added : fpzfiwqzpe
+Port added : 9434
+Dynamic profile added : dsifuezfjk
+Port added : 9435
+Dynamic profile added : pnnhoedkat
+Port added : 9436
+Dynamic profile added : kqxnsqhgsh
+Port added : 9437
+Dynamic profile added : hrpsjeyiyg
+Port added : 9438
+Dynamic profile added : jgvyaqkjst
+Port added : 9439
+Dynamic profile added : pgqqvexnpy
+Port added : 9440
+Dynamic profile added : tynocvnpbn
+Port added : 9441
+Dynamic profile added : xojxvoqkae
+Port added : 9442
+Dynamic profile added : bfhfqhtwqd
+Port added : 9443
+Dynamic profile added : ttbkpebtbz
+Port added : 9444
+Dynamic profile added : zvrdgkdubf
+Port added : 9445
+Dynamic profile added : rcatwfurqt
+Port added : 9446
+Dynamic profile added : xeerpeakgb
+Port added : 9447
+Dynamic profile added : cobgoenzjq
+Port added : 9448
+Dynamic profile added : wxdpcygkqu
+Port added : 9449
+Dynamic profile added : bztfdvxvqu
+Port added : 9450
+Dynamic profile added : aragabnmsb
+Port added : 9451
+Dynamic profile added : ezuxffhvph
+Port added : 9452
+Dynamic profile added : afjcenrtwp
+Port added : 9453
+Dynamic profile added : eeypwvfrwu
+Port added : 9454
+Dynamic profile added : kjfqhobopt
+Port added : 9455
+Dynamic profile added : emrsqabehs
+Port added : 9456
+Dynamic profile added : levrvfcglu
+Port added : 9457
+Dynamic profile added : xrtxroxjss
+Port added : 9458
+Dynamic profile added : giumtrgtqs
+Port added : 9459
+Dynamic profile added : lpywkilkfr
+Port added : 9460
+Dynamic profile added : vnmfsqnyrl
+Port added : 9461
+Dynamic profile added : vffvdokjvb
+Port added : 9462
+Dynamic profile added : gxfdovxenv
+Port added : 9463
+Dynamic profile added : potvwykjlw
+Port added : 9464
+Dynamic profile added : ixdjisygek
+Port added : 9465
+Dynamic profile added : qgrkoevysl
+Port added : 9466
+Dynamic profile added : kyifpkmesk
+Port added : 9467
+Dynamic profile added : ovuieiwzoi
+Port added : 9468
+Dynamic profile added : ckgxgngjuv
+Port added : 9469
+Dynamic profile added : rqmptpxxup
+Port added : 9470
+Dynamic profile added : kukwxqkmpq
+Port added : 9471
+Dynamic profile added : xmyavoxfal
+Port added : 9472
+Dynamic profile added : eplekfkvqy
+Port added : 9473
+Dynamic profile added : naaqmsivuj
+Port added : 9474
+Dynamic profile added : hlpczscggb
+Port added : 9475
+Dynamic profile added : xjbnaaiugd
+Port added : 9476
+Dynamic profile added : gkaegmkysk
+Port added : 9477
+Dynamic profile added : seotkqvzwt
+Port added : 9478
+Dynamic profile added : lyilessphq
+Port added : 9479
+Dynamic profile added : axajnfedmu
+Port added : 9480
+Dynamic profile added : khaehrcipq
+Port added : 9481
+Dynamic profile added : ubbxgasjlk
+Port added : 9482
+Dynamic profile added : plffajwbmf
+Port added : 9483
+Dynamic profile added : qhcecwfqvj
+Port added : 9484
+Dynamic profile added : bdtnhycwdf
+Port added : 9485
+Dynamic profile added : agxmwitwsx
+Port added : 9486
+Dynamic profile added : qfjyxyiktq
+Port added : 9487
+Dynamic profile added : ypulfrirdt
+Port added : 9488
+Dynamic profile added : ooceoqxssr
+Port added : 9489
+Dynamic profile added : duwimrgyuo
+Port added : 9490
+Dynamic profile added : dbkauuamxl
+Port added : 9491
+Dynamic profile added : vucadkcjje
+Port added : 9492
+Dynamic profile added : caglytyljb
+Port added : 9493
+Dynamic profile added : pksrfddasl
+Port added : 9494
+Dynamic profile added : kopvqmrhna
+Port added : 9495
+Dynamic profile added : wirlcxyflb
+Port added : 9496
+Dynamic profile added : vixcpmvtgf
+Port added : 9497
+Dynamic profile added : ckdivvsvyk
+Port added : 9498
+Dynamic profile added : eztxajavco
+Port added : 9499
+Dynamic profile added : jnfcuxqkbm
+Port added : 9500
+Dynamic profile added : uhrkqncexi
+Port added : 9501
+Dynamic profile added : phuthkwoqi
+Port added : 9502
+Dynamic profile added : gvkdfyvttf
+Port added : 9503
+Dynamic profile added : mgobungjff
+Port added : 9504
+Dynamic profile added : oqjgipyumb
+Port added : 9505
+Dynamic profile added : jgpkzqltal
+Port added : 9506
+Dynamic profile added : baipvmsays
+Port added : 9507
+Dynamic profile added : lcqscnwwiw
+Port added : 9508
+Dynamic profile added : osgcyrrxmq
+Port added : 9509
+Dynamic profile added : egepnhcdjz
+Port added : 9510
+Dynamic profile added : mnkcfzjyhj
+Port added : 9511
+Dynamic profile added : bybhjsxzho
+Port added : 9512
+Dynamic profile added : fjgfdptokm
+Port added : 9513
+Dynamic profile added : kqogkzkylt
+Port added : 9514
+Dynamic profile added : lponfnufam
+Port added : 9515
+Dynamic profile added : hdvtikgsln
+Port added : 9516
+Dynamic profile added : swgjcmloqp
+Port added : 9517
+Dynamic profile added : emivjwimyn
+Port added : 9518
+Dynamic profile added : nsgwniuush
+Port added : 9519
+Dynamic profile added : jerlhxmjwu
+Port added : 9520
+Dynamic profile added : thadgryiym
+Port added : 9521
+Dynamic profile added : pabjvodvji
+Port added : 9522
+Dynamic profile added : wkgepndqbu
+Port added : 9523
+Dynamic profile added : gwvpfksqbu
+Port added : 9524
+Dynamic profile added : vadennikeu
+Port added : 9525
+Dynamic profile added : tpegcsnpnt
+Port added : 9526
+Dynamic profile added : czqoxhgdyr
+Port added : 9527
+Dynamic profile added : mjefhkhgrz
+Port added : 9528
+Dynamic profile added : xwsradqvmm
+Port added : 9529
+Dynamic profile added : vglkfhqdck
+Port added : 9530
+Dynamic profile added : ttchfahsne
+Port added : 9531
+Dynamic profile added : wqiyuizaxv
+Port added : 9532
+Dynamic profile added : etnjfzcwsy
+Port added : 9533
+Dynamic profile added : rkvczxcvtd
+Port added : 9534
+Dynamic profile added : yvhbxhdlse
+Port added : 9535
+Dynamic profile added : cygbdguqxu
+Port added : 9536
+Dynamic profile added : gwviknlhpl
+Port added : 9537
+Dynamic profile added : cromwxodjp
+Port added : 9538
+Dynamic profile added : frloyfzwcl
+Port added : 9539
+Dynamic profile added : gfgqmogkuc
+Port added : 9540
+Dynamic profile added : isypqrgxqp
+Port added : 9541
+Dynamic profile added : gmbuhnabfy
+Port added : 9542
+Dynamic profile added : yrgbckvacb
+Port added : 9543
+Dynamic profile added : dyykhiknin
+Port added : 9544
+Dynamic profile added : ulgkfnfrrt
+Port added : 9545
+Dynamic profile added : eqiwjikbiy
+Port added : 9546
+Dynamic profile added : bcauaussmo
+Port added : 9547
+Dynamic profile added : apshqnokrw
+Port added : 9548
+Dynamic profile added : dydjfljufm
+Port added : 9549
+Dynamic profile added : gfnqfnifuu
+Port added : 9550
+Dynamic profile added : oyevdacdon
+Port added : 9551
+Dynamic profile added : poionxeacu
+Port added : 9552
+Dynamic profile added : jjjlvgeyhv
+Port added : 9553
+Dynamic profile added : doxjansihb
+Port added : 9554
+Dynamic profile added : eivycqszqu
+Port added : 9555
+Dynamic profile added : jcjhjbydfi
+Port added : 9556
+Dynamic profile added : rchlrzizda
+Port added : 9557
+Dynamic profile added : cxfdowqyyy
+Port added : 9558
+Dynamic profile added : trncqvazvp
+Port added : 9559
+Dynamic profile added : mmjwzkbwfg
+Port added : 9560
+Dynamic profile added : jxpvrzafqt
+Port added : 9561
+Dynamic profile added : ffzxyiqtdj
+Port added : 9562
+Dynamic profile added : rvagqhuhss
+Port added : 9563
+Dynamic profile added : zajgcchodo
+Port added : 9564
+Dynamic profile added : arjwuamgdh
+Port added : 9565
+Dynamic profile added : blwdbyyiib
+Port added : 9566
+Dynamic profile added : vxqerfddtr
+Port added : 9567
+Dynamic profile added : snduwapmna
+Port added : 9568
+Dynamic profile added : aeozcollmz
+Port added : 9569
+Dynamic profile added : uwbkiafkzg
+Port added : 9570
+Dynamic profile added : otebmcybzh
+Port added : 9571
+Dynamic profile added : gzsyzuwcxg
+Port added : 9572
+Dynamic profile added : ruqfrctqyn
+Port added : 9573
+Dynamic profile added : wsnrehyesq
+Port added : 9574
+Dynamic profile added : etdgflkkbt
+Port added : 9575
+Dynamic profile added : bmsqyombla
+Port added : 9576
+Dynamic profile added : obcnnjoktv
+Port added : 9577
+Dynamic profile added : zaqggxtmvp
+Port added : 9578
+Dynamic profile added : aggjcrqljl
+Port added : 9579
+Dynamic profile added : zemoqtnnqm
+Port added : 9580
+Dynamic profile added : hmgeeccbqr
+Port added : 9581
+Dynamic profile added : wdhcbpirna
+Port added : 9582
+Dynamic profile added : hebabjhnbk
+Port added : 9583
+Dynamic profile added : htdpuiptry
+Port added : 9584
+Dynamic profile added : bevspdbegv
+Port added : 9585
+Dynamic profile added : xvwvplwrjf
+Port added : 9586
+Dynamic profile added : lvqkmutlnu
+Port added : 9587
+Dynamic profile added : mhkicrmhha
+Port added : 9588
+Dynamic profile added : oczsmzfzoy
+Port added : 9589
+Dynamic profile added : hgxswmrhri
+Port added : 9590
+Dynamic profile added : vttyuqhgzd
+Port added : 9591
+Dynamic profile added : gtfdziiwoe
+Port added : 9592
+Dynamic profile added : nchkmuztmd
+Port added : 9593
+Dynamic profile added : dttulpgfjm
+Port added : 9594
+Dynamic profile added : agvgygukcl
+Port added : 9595
+Dynamic profile added : lfbairsnit
+Port added : 9596
+Dynamic profile added : mwdkqcnsgp
+Port added : 9597
+Dynamic profile added : nlrenxiojm
+Port added : 9598
+Dynamic profile added : axgadgstst
+Port added : 9599
+Dynamic profile added : ptztfimoch
+Port added : 9600
+Dynamic profile added : xjkegcbhex
+Port added : 9601
+Dynamic profile added : msomnzgziu
+Port added : 9602
+Dynamic profile added : etxzovxdgs
+Port added : 9603
+Dynamic profile added : oeikcjpeob
+Port added : 9604
+Dynamic profile added : ogkgtusfmx
+Port added : 9605
+Dynamic profile added : eackweifhu
+Port added : 9606
+Dynamic profile added : lkesdrzawg
+Port added : 9607
+Dynamic profile added : dxyncntagl
+Port added : 9608
+Dynamic profile added : gqqfgjvgde
+Port added : 9609
+Dynamic profile added : fsspbbrsfa
+Port added : 9610
+Dynamic profile added : gbmhjsuiuh
+Port added : 9611
+Dynamic profile added : chmgfsjysc
+Port added : 9612
+Dynamic profile added : ilwtdcvpqq
+Port added : 9613
+Dynamic profile added : yrkqcawdgc
+Port added : 9614
+Dynamic profile added : fcsjxnvdfo
+Port added : 9615
+Dynamic profile added : ksicqkrqvy
+Port added : 9616
+Dynamic profile added : iahvsmazwp
+Port added : 9617
+Dynamic profile added : msysdqpbpg
+Port added : 9618
+Dynamic profile added : bpfaksxtgq
+Port added : 9619
+Dynamic profile added : cjnftsbouc
+Port added : 9620
+Dynamic profile added : ptouavhgzz
+Port added : 9621
+Dynamic profile added : ufghfcxgmo
+Port added : 9622
+Dynamic profile added : qubqsimkln
+Port added : 9623
+Dynamic profile added : pwpuqxzabw
+Port added : 9624
+Dynamic profile added : apinfeozap
+Port added : 9625
+Dynamic profile added : uibfjyknvp
+Port added : 9626
+Dynamic profile added : ijyepybgle
+Port added : 9627
+Dynamic profile added : aewxosimdo
+Port added : 9628
+Dynamic profile added : fzaihagdoy
+Port added : 9629
+Dynamic profile added : iddajfaond
+Port added : 9630
+Dynamic profile added : nrqwvcdjny
+Port added : 9631
+Dynamic profile added : exzdunjife
+Port added : 9632
+Dynamic profile added : mbsfvnkiej
+Port added : 9633
+Dynamic profile added : gzwnvsvtbq
+Port added : 9634
+Dynamic profile added : poaagslwnp
+Port added : 9635
+Dynamic profile added : luwjogikwv
+Port added : 9636
+Dynamic profile added : wrjdjvmfal
+Port added : 9637
+Dynamic profile added : ggdouirgfj
+Port added : 9638
+Dynamic profile added : twyjbysduk
+Port added : 9639
+Dynamic profile added : mplxrfubnb
+Port added : 9640
+Dynamic profile added : tkxeifmvjt
+Port added : 9641
+Dynamic profile added : ynmelrjacd
+Port added : 9642
+Dynamic profile added : oytloxipps
+Port added : 9643
+Dynamic profile added : mbkqmrsjnu
+Port added : 9644
+Dynamic profile added : cpqmtnobdp
+Port added : 9645
+Dynamic profile added : uuhvrekmoj
+Port added : 9646
+Dynamic profile added : hynrjiyxha
+Port added : 9647
+Dynamic profile added : onxyxigezm
+Port added : 9648
+Dynamic profile added : mwigztunaa
+Port added : 9649
+Dynamic profile added : icpmexcjgl
+Port added : 9650
+Dynamic profile added : lqnbwqgmgz
+Port added : 9651
+Dynamic profile added : whhzyixhws
+Port added : 9652
+Dynamic profile added : qfwdmblxse
+Port added : 9653
+Dynamic profile added : ytzzzsumwi
+Port added : 9654
+Dynamic profile added : mggxpwgbza
+Port added : 9655
+Dynamic profile added : twndmaafdz
+Port added : 9656
+Dynamic profile added : xrkbawnevr
+Port added : 9657
+Dynamic profile added : gycpirpkcp
+Port added : 9658
+Dynamic profile added : sfgizmpbpm
+Port added : 9659
+Dynamic profile added : wkotrymbak
+Port added : 9660
+Dynamic profile added : tibshjdwov
+Port added : 9661
+Dynamic profile added : hqtdkwdxhg
+Port added : 9662
+Dynamic profile added : xbuyokyspf
+Port added : 9663
+Dynamic profile added : wmsatlolrr
+Port added : 9664
+Dynamic profile added : zcxyjzveon
+Port added : 9665
+Dynamic profile added : pqxkfoyubh
+Port added : 9666
+Dynamic profile added : rgqhpunaza
+Port added : 9667
+Dynamic profile added : pgxfvwmcwk
+Port added : 9668
+Dynamic profile added : iavnxvjzew
+Port added : 9669
+Dynamic profile added : jplecmpnkx
+Port added : 9670
+Dynamic profile added : vdtanpzyak
+Port added : 9671
+Dynamic profile added : rcwzircqik
+Port added : 9672
+Dynamic profile added : ewzcotcgpm
+Port added : 9673
+Dynamic profile added : wwaeqofnmg
+Port added : 9674
+Dynamic profile added : wwcuwrvwrt
+Port added : 9675
+Dynamic profile added : iugjaruvpv
+Port added : 9676
+Dynamic profile added : fwpoqtuznc
+Port added : 9677
+Dynamic profile added : jwrbbpdfrr
+Port added : 9678
+Dynamic profile added : envzzzinxk
+Port added : 9679
+Dynamic profile added : gpwmbilwrd
+Port added : 9680
+Dynamic profile added : vdtygvybat
+Port added : 9681
+Dynamic profile added : zbwfkzafkx
+Port added : 9682
+Dynamic profile added : lbzpltwopf
+Port added : 9683
+Dynamic profile added : dzpchjymep
+Port added : 9684
+Dynamic profile added : wocfgbmqvr
+Port added : 9685
+Dynamic profile added : uolfyazwil
+Port added : 9686
+Dynamic profile added : yhozsxlucx
+Port added : 9687
+Dynamic profile added : bvxfjteebl
+Port added : 9688
+Dynamic profile added : jgjxiidbjn
+Port added : 9689
+Dynamic profile added : yhdzuostbb
+Port added : 9690
+Dynamic profile added : drkmnlblki
+Port added : 9691
+Dynamic profile added : wofzwjpyts
+Port added : 9692
+Dynamic profile added : iuekmawrsj
+Port added : 9693
+Dynamic profile added : jzmuxzswrj
+Port added : 9694
+Dynamic profile added : gdnaxfqild
+Port added : 9695
+Dynamic profile added : ymrsniehkv
+Port added : 9696
+Dynamic profile added : udxwqynoxp
+Port added : 9697
+Dynamic profile added : qkkhzqnccg
+Port added : 9698
+Dynamic profile added : caqmnsqtoh
+Port added : 9699
+Dynamic profile added : dniwqdoxyv
+Port added : 9700
+Dynamic profile added : mioykbobrq
+Port added : 9701
+Dynamic profile added : ljkspccwie
+Port added : 9702
+Dynamic profile added : nzqbbzqrhe
+Port added : 9703
+Dynamic profile added : uxdfswqmvz
+Port added : 9704
+Dynamic profile added : fjpyeqmxbw
+Port added : 9705
+Dynamic profile added : gnluszsjmz
+Port added : 9706
+Dynamic profile added : rrvyrxbgjr
+Port added : 9707
+Dynamic profile added : avfvhqllxo
+Port added : 9708
+Dynamic profile added : lmxbnesemb
+Port added : 9709
+Dynamic profile added : gmojctsufn
+Port added : 9710
+Dynamic profile added : vxtmgphknd
+Port added : 9711
+Dynamic profile added : nmmjftbkwh
+Port added : 9712
+Dynamic profile added : ubfjqdgloe
+Port added : 9713
+Dynamic profile added : rkneuxfvor
+Port added : 9714
+Dynamic profile added : ysffuroxzz
+Port added : 9715
+Dynamic profile added : zmhtuzlrcl
+Port added : 9716
+Dynamic profile added : eprpsxeodj
+Port added : 9717
+Dynamic profile added : vnxmbiqzwf
+Port added : 9718
+Dynamic profile added : nkbcxndbah
+Port added : 9719
+Dynamic profile added : rkpnpqdjdy
+Port added : 9720
+Dynamic profile added : lbfajavzgy
+Port added : 9721
+Dynamic profile added : imepuhrhtw
+Port added : 9722
+Dynamic profile added : hppkemsqdm
+Port added : 9723
+Dynamic profile added : vukomjftja
+Port added : 9724
+Dynamic profile added : nciybtkgdi
+Port added : 9725
+Dynamic profile added : iswxfwokon
+Port added : 9726
+Dynamic profile added : lsdbxoetts
+Port added : 9727
+Dynamic profile added : worjrzyoam
+Port added : 9728
+Dynamic profile added : ssbeertwbi
+Port added : 9729
+Dynamic profile added : huqvhvckui
+Port added : 9730
+Dynamic profile added : irfkhrvjvw
+Port added : 9731
+Dynamic profile added : bgvisfvhlm
+Port added : 9732
+Dynamic profile added : jorfeildoq
+Port added : 9733
+Dynamic profile added : zarcvzaklu
+Port added : 9734
+Dynamic profile added : xxpwfokark
+Port added : 9735
+Dynamic profile added : onwnqqrrfz
+Port added : 9736
+Dynamic profile added : louixpmknc
+Port added : 9737
+Dynamic profile added : tjskspgcnc
+Port added : 9738
+Dynamic profile added : uoiebxshww
+Port added : 9739
+Dynamic profile added : kgqntmrbmt
+Port added : 9740
+Dynamic profile added : wdbwvjdnsv
+Port added : 9741
+Dynamic profile added : ltmuaxqenz
+Port added : 9742
+Dynamic profile added : vvnqzhlinx
+Port added : 9743
+Dynamic profile added : cyatecvsdp
+Port added : 9744
+Dynamic profile added : flakvhaceo
+Port added : 9745
+Dynamic profile added : embcpklduw
+Port added : 9746
+Dynamic profile added : ztzcpbwywa
+Port added : 9747
+Dynamic profile added : wifodnwrnd
+Port added : 9748
+Dynamic profile added : whikladiqb
+Port added : 9749
+Dynamic profile added : hxbqcbduxh
+Port added : 9750
+Dynamic profile added : tjajcmkdwi
+Port added : 9751
+Dynamic profile added : ufddbitqjb
+Port added : 9752
+Dynamic profile added : mstprfyrgc
+Port added : 9753
+Dynamic profile added : qyjmwdtexe
+Port added : 9754
+Dynamic profile added : fgmvpdfkws
+Port added : 9755
+Dynamic profile added : hkorlzhijg
+Port added : 9756
+Dynamic profile added : kabaqihljo
+Port added : 9757
+Dynamic profile added : vlxjsnnume
+Port added : 9758
+Dynamic profile added : yvvkxhjrdl
+Port added : 9759
+Dynamic profile added : jxwhxsscnf
+Port added : 9760
+Dynamic profile added : cbcroffnwr
+Port added : 9761
+Dynamic profile added : lezwroelbn
+Port added : 9762
+Dynamic profile added : uufcruhsqo
+Port added : 9763
+Dynamic profile added : zesokjkmdm
+Port added : 9764
+Dynamic profile added : qdoxevomjr
+Port added : 9765
+Dynamic profile added : oexjetosip
+Port added : 9766
+Dynamic profile added : yjvchsiqxo
+Port added : 9767
+Dynamic profile added : cpvqulkmom
+Port added : 9768
+Dynamic profile added : hcxbsbvbqk
+Port added : 9769
+Dynamic profile added : ollwmzaiwj
+Port added : 9770
+Dynamic profile added : igxghpoipd
+Port added : 9771
+Dynamic profile added : gelzihhlch
+Port added : 9772
+Dynamic profile added : bsndlkuemi
+Port added : 9773
+Dynamic profile added : bxvqqecgrj
+Port added : 9774
+Dynamic profile added : wayfabuext
+Port added : 9775
+Dynamic profile added : zeijjeaybz
+Port added : 9776
+Dynamic profile added : unbiomsnln
+Port added : 9777
+Dynamic profile added : nfifhddrjb
+Port added : 9778
+Dynamic profile added : xkoowcattq
+Port added : 9779
+Dynamic profile added : hzwubsizve
+Port added : 9780
+Dynamic profile added : hayljbksai
+Port added : 9781
+Dynamic profile added : jpwbhdqwok
+Port added : 9782
+Dynamic profile added : iujyzqvjnx
+Port added : 9783
+Dynamic profile added : oupzsoyltw
+Port added : 9784
+Dynamic profile added : ovshkoyslt
+Port added : 9785
+Dynamic profile added : sreokrzjwe
+Port added : 9786
+Dynamic profile added : grpodsigba
+Port added : 9787
+Dynamic profile added : vnqbhbocgk
+Port added : 9788
+Dynamic profile added : giooxaugcp
+Port added : 9789
+Dynamic profile added : uuqwucrfae
+Port added : 9790
+Dynamic profile added : fhwkdylfug
+Port added : 9791
+Dynamic profile added : ntebltwqtl
+Port added : 9792
+Dynamic profile added : xjgihrmjkz
+Port added : 9793
+Dynamic profile added : bsoytcfyvc
+Port added : 9794
+Dynamic profile added : ixlnykcaqg
+Port added : 9795
+Dynamic profile added : rjsdecoeqc
+Port added : 9796
+Dynamic profile added : peoqqghadm
+Port added : 9797
+Dynamic profile added : auxrdzltcs
+Port added : 9798
+Dynamic profile added : flzgzkfrru
+Port added : 9799
+Dynamic profile added : aaldbnutvu
+Port added : 9800
+Dynamic profile added : yayutiiaor
+Port added : 9801
+Dynamic profile added : zgmtombnct
+Port added : 9802
+Dynamic profile added : aobmomgswx
+Port added : 9803
+Dynamic profile added : hmtagsrvzi
+Port added : 9804
+Dynamic profile added : ebapuuwbva
+Port added : 9805
+Dynamic profile added : ucznzxbvvq
+Port added : 9806
+Dynamic profile added : fardkbhxfz
+Port added : 9807
+Dynamic profile added : tkdadptjlm
+Port added : 9808
+Dynamic profile added : vksdcdvaef
+Port added : 9809
+Dynamic profile added : rwkghixufh
+Port added : 9810
+Dynamic profile added : jydhwhhqpm
+Port added : 9811
+Dynamic profile added : lgkchonhsh
+Port added : 9812
+Dynamic profile added : hqxurkvpby
+Port added : 9813
+Dynamic profile added : uanmhbawwl
+Port added : 9814
+Dynamic profile added : bwuedsrqup
+Port added : 9815
+Dynamic profile added : plcwxsbpbg
+Port added : 9816
+Dynamic profile added : sebybetvvu
+Port added : 9817
+Dynamic profile added : lyxidwqcbr
+Port added : 9818
+Dynamic profile added : ajmyinwpnq
+Port added : 9819
+Dynamic profile added : rznfpivwgp
+Port added : 9820
+Dynamic profile added : ljhlcmwkeo
+Port added : 9821
+Dynamic profile added : atzzlymuuo
+Port added : 9822
+Dynamic profile added : csusqkahxl
+Port added : 9823
+Dynamic profile added : bocfojiiue
+Port added : 9824
+Dynamic profile added : rdoeopxeqp
+Port added : 9825
+Dynamic profile added : bocxunwwnv
+Port added : 9826
+Dynamic profile added : qxhgmgauuo
+Port added : 9827
+Dynamic profile added : oouxaxltcr
+Port added : 9828
+Dynamic profile added : nkuuxtpyky
+Port added : 9829
+Dynamic profile added : lbymiwmlym
+Port added : 9830
+Dynamic profile added : kptxjzknna
+Port added : 9831
+Dynamic profile added : uzzesfzdat
+Port added : 9832
+Dynamic profile added : apposykrzj
+Port added : 9833
+Dynamic profile added : fxdozxeyvp
+Port added : 9834
+Dynamic profile added : hgldqcblpt
+Port added : 9835
+Dynamic profile added : sflppdzjwn
+Port added : 9836
+Dynamic profile added : bknloysrrb
+Port added : 9837
+Dynamic profile added : fqxssouvoo
+Port added : 9838
+Dynamic profile added : msffcfrlhs
+Port added : 9839
+Dynamic profile added : dwhbfbxvbc
+Port added : 9840
+Dynamic profile added : eqrtwctsfn
+Port added : 9841
+Dynamic profile added : arzmzfbvlx
+Port added : 9842
+Dynamic profile added : kdtoliktot
+Port added : 9843
+Dynamic profile added : apygyoqsev
+Port added : 9844
+Dynamic profile added : hvvcrscmvf
+Port added : 9845
+Dynamic profile added : fixpqdgohz
+Port added : 9846
+Dynamic profile added : oqvbqaseam
+Port added : 9847
+Dynamic profile added : pshftnpjkp
+Port added : 9848
+Dynamic profile added : awqnlykkzx
+Port added : 9849
+Dynamic profile added : xlqmwxdxfm
+Port added : 9850
+Dynamic profile added : dxzorgmwlm
+Port added : 9851
+Dynamic profile added : wtgujnymqr
+Port added : 9852
+Dynamic profile added : akwzqkjnfc
+Port added : 9853
+Dynamic profile added : qvkrulngdd
+Port added : 9854
+Dynamic profile added : sxxlfixldo
+Port added : 9855
+Dynamic profile added : scdnnwcqoj
+Port added : 9856
+Dynamic profile added : aclumamveq
+Port added : 9857
+Dynamic profile added : fmznbnejsl
+Port added : 9858
+Dynamic profile added : lgeabmteow
+Port added : 9859
+Dynamic profile added : ticjaikhbm
+Port added : 9860
+Dynamic profile added : lmvrcontyk
+Port added : 9861
+Dynamic profile added : fskaqpwliu
+Port added : 9862
+Dynamic profile added : ruunhppsbm
+Port added : 9863
+Dynamic profile added : ceptvjsdpr
+Port added : 9864
+Dynamic profile added : laetzxouss
+Port added : 9865
+Dynamic profile added : efwzjttcdv
+Port added : 9866
+Dynamic profile added : fygbeteljf
+Port added : 9867
+Dynamic profile added : stuhovlnjt
+Port added : 9868
+Dynamic profile added : igsnnvovdh
+Port added : 9869
+Dynamic profile added : bfhmlbuzlh
+Port added : 9870
+Dynamic profile added : bsgburczfn
+Port added : 9871
+Dynamic profile added : pelktygwnx
+Port added : 9872
+Dynamic profile added : sbjpsidxyf
+Port added : 9873
+Dynamic profile added : zgltunxisp
+Port added : 9874
+Dynamic profile added : kvdmothhah
+Port added : 9875
+Dynamic profile added : wogatgbwzb
+Port added : 9876
+Dynamic profile added : llykutskha
+Port added : 9877
+Dynamic profile added : gsyscvwesn
+Port added : 9878
+Dynamic profile added : wvkvdegfea
+Port added : 9879
+Dynamic profile added : imqisedkib
+Port added : 9880
+Dynamic profile added : lijazbjlyc
+Port added : 9881
+Dynamic profile added : usrwnbsapt
+Port added : 9882
+Dynamic profile added : vyaswofbzg
+Port added : 9883
+Dynamic profile added : enknnznsvu
+Port added : 9884
+Dynamic profile added : jkeufvavce
+Port added : 9885
+Dynamic profile added : lupegzpabu
+Port added : 9886
+Dynamic profile added : knymvuhvcb
+Port added : 9887
+Dynamic profile added : pewunrqgnr
+Port added : 9888
+Dynamic profile added : vmjiuosjqj
+Port added : 9889
+Dynamic profile added : yneltzbgvf
+Port added : 9890
+Dynamic profile added : lgwyekmfrg
+Port added : 9891
+Dynamic profile added : ewdxjsarzd
+Port added : 9892
+Dynamic profile added : dwikiujxdk
+Port added : 9893
+Dynamic profile added : ogxzzdkrej
+Port added : 9894
+Dynamic profile added : gutffkjwon
+Port added : 9895
+Dynamic profile added : upgppivplp
+Port added : 9896
+Dynamic profile added : wklkbmgejf
+Port added : 9897
+Dynamic profile added : tcrmadbmsr
+Port added : 9898
+Dynamic profile added : fupjbzhbrs
+Port added : 9899
+Dynamic profile added : ldepyydjzp
+Port added : 9900
+Dynamic profile added : wvkkkfkhsv
+Port added : 9901
+Dynamic profile added : uezomjmtwm
+Port added : 9902
+Dynamic profile added : jhzkitixyj
+Port added : 9903
+Dynamic profile added : fvgilyiymo
+Port added : 9904
+Dynamic profile added : qzvvgsmktg
+Port added : 9905
+Dynamic profile added : hlttfvwqxz
+Port added : 9906
+Dynamic profile added : afmmthapxm
+Port added : 9907
+Dynamic profile added : lurehwvaia
+Port added : 9908
+Dynamic profile added : chrkdhmtyc
+Port added : 9909
+Dynamic profile added : ruvfleerbl
+Port added : 9910
+Dynamic profile added : lnqsmevfoa
+Port added : 9911
+Dynamic profile added : wzgsxgtjia
+Port added : 9912
+Dynamic profile added : umvjdgrumr
+Port added : 9913
+Dynamic profile added : wutvhbuwnh
+Port added : 9914
+Dynamic profile added : qkfxrvshpb
+Port added : 9915
+Dynamic profile added : qyhnuyhxci
+Port added : 9916
+Dynamic profile added : avpfwrqclv
+Port added : 9917
+Dynamic profile added : wilrjompkd
+Port added : 9918
+Dynamic profile added : psvwjenzue
+Port added : 9919
+Dynamic profile added : wgtalaynov
+Port added : 9920
+Dynamic profile added : quukvrivzp
+Port added : 9921
+Dynamic profile added : rscrgbhuiw
+Port added : 9922
+Dynamic profile added : lepdyaumjy
+Port added : 9923
+Dynamic profile added : eykynfobxs
+Port added : 9924
+Dynamic profile added : dedljfahyb
+Port added : 9925
+Dynamic profile added : trsakuvnnf
+Port added : 9926
+Dynamic profile added : sndwqitrpc
+Port added : 9927
+Dynamic profile added : caldecqavu
+Port added : 9928
+Dynamic profile added : afbfmqawot
+Port added : 9929
+Dynamic profile added : qflyyocbtb
+Port added : 9930
+Dynamic profile added : plrlsprerg
+Port added : 9931
+Dynamic profile added : mpvhgrxhga
+Port added : 9932
+Dynamic profile added : stokbesyvw
+Port added : 9933
+Dynamic profile added : wxfxwjaxcd
+Port added : 9934
+Dynamic profile added : ilqceithob
+Port added : 9935
+Dynamic profile added : xouezedwgl
+Port added : 9936
+Dynamic profile added : hfvzhgaaqf
+Port added : 9937
+Dynamic profile added : vvbyvluyqw
+Port added : 9938
+Dynamic profile added : dmivfokkkp
+Port added : 9939
+Dynamic profile added : tfwqlqvcvg
+Port added : 9940
+Dynamic profile added : cvfrajchpm
+Port added : 9941
+Dynamic profile added : xtviqyxxxz
+Port added : 9942
+Dynamic profile added : cgptshzjil
+Port added : 9943
+Dynamic profile added : reqneonprn
+Port added : 9944
+Dynamic profile added : dtefnbnzhh
+Port added : 9945
+Dynamic profile added : dqebwjgywh
+Port added : 9946
+Dynamic profile added : uijkhwfjdb
+Port added : 9947
+Dynamic profile added : vygrbxrhxq
+Port added : 9948
+Dynamic profile added : cnlvsdqxxq
+Port added : 9949
+Dynamic profile added : bmklcmpitb
+Port added : 9950
+Dynamic profile added : pbpanvuwwb
+Port added : 9951
+Dynamic profile added : wclbkvfdhc
+Port added : 9952
+Dynamic profile added : vzxeimapuk
+Port added : 9953
+Dynamic profile added : jequjhfllh
+Port added : 9954
+Dynamic profile added : puasdaossa
+Port added : 9955
+Dynamic profile added : nbvictefwg
+Port added : 9956
+Dynamic profile added : vggtadcgzu
+Port added : 9957
+Dynamic profile added : cpstsncvhx
+Port added : 9958
+Dynamic profile added : jtqsqmflhs
+Port added : 9959
+Dynamic profile added : mvakspubap
+Port added : 9960
+Dynamic profile added : zokvncjzyz
+Port added : 9961
+Dynamic profile added : bebbaelamz
+Port added : 9962
+Dynamic profile added : dgrcugiaqi
+Port added : 9963
+Dynamic profile added : xzxwzxzrtn
+Port added : 9964
+Dynamic profile added : clingkyljk
+Port added : 9965
+Dynamic profile added : kiogdmqcbt
+Port added : 9966
+Dynamic profile added : lmleovqnht
+Port added : 9967
+Dynamic profile added : crdxreojru
+Port added : 9968
+Dynamic profile added : krihmswkwf
+Port added : 9969
+Dynamic profile added : ewqqucuuhp
+Port added : 9970
+Dynamic profile added : rlhwyfdpzw
+Port added : 9971
+Dynamic profile added : czsiixdfug
+Port added : 9972
+Dynamic profile added : ijdrgfprxt
+Port added : 9973
+Dynamic profile added : jyimgaaxdj
+Port added : 9974
+Dynamic profile added : junjwpohvh
+Port added : 9975
+Dynamic profile added : vlncvyzgog
+Port added : 9976
+Dynamic profile added : hmxebtpwhl
+Port added : 9977
+Dynamic profile added : hgysxbkkad
+Port added : 9978
+Dynamic profile added : ugioswtopi
+Port added : 9979
+Dynamic profile added : iesqucacpx
+Port added : 9980
+Dynamic profile added : rlpmnbayva
+Port added : 9981
+Dynamic profile added : mdvgaecuyb
+Port added : 9982
+Dynamic profile added : ggkasprqdj
+Port added : 9983
+Dynamic profile added : udlokkhack
+Port added : 9984
+Dynamic profile added : rwbzzkmihx
+Port added : 9985
+Dynamic profile added : bmhrtjfgpu
+Port added : 9986
+Dynamic profile added : lcdcyfzjih
+Port added : 9987
+Dynamic profile added : qfmtxslhoz
+Port added : 9988
+Dynamic profile added : gbdluovmem
+Port added : 9989
+Dynamic profile added : xaaxswdxxx
+Port added : 9990
+Dynamic profile added : aewmtmhomf
+Port added : 9991
+Dynamic profile added : xnkrygksdz
+Port added : 9992
+Dynamic profile added : hgnbxuzyro
+Port added : 9993
+Dynamic profile added : etezohzcps
+Port added : 9994
+Dynamic profile added : vblnsvekiz
+Port added : 9995
+Dynamic profile added : twcxibxkni
+Port added : 9996
+Dynamic profile added : toxgnfeosn
+Port added : 9997
+Dynamic profile added : eeklsiofqg
+Port added : 9998
+Dynamic profile added : dpjizgcixm
+Port added : 9999
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params" time="20.586"><system-out><![CDATA[
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 256}
+Profile size: 45813
+Load took: 0.014
+Start took: 0.076
+Creating profile with params: {'client_ips': 256, 'templates': 256, 'server_ips': 256}
+Profile size: 214103
+Load took: 0.069
+Start took: 0.098
+Creating profile with params: {'client_ips': 256, 'templates': 4096, 'server_ips': 256}
+Profile size: 2751306
+Load took: 0.873
+Start took: 0.918
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 65536}
+Profile size: 46923
+Load took: 0.009
+Start took: 0.074
+Creating profile with params: {'client_ips': 256, 'templates': 256, 'server_ips': 65536}
+Profile size: 215725
+Load took: 0.074
+Start took: 0.103
+Creating profile with params: {'client_ips': 256, 'templates': 4096, 'server_ips': 65536}
+Profile size: 2760608
+Load took: 0.874
+Start took: 0.944
+Creating profile with params: {'client_ips': 65536, 'templates': 1, 'server_ips': 256}
+Profile size: 48035
+Load took: 0.009
+Start took: 0.197
+Creating profile with params: {'client_ips': 65536, 'templates': 256, 'server_ips': 256}
+Profile size: 216835
+Load took: 0.071
+Start took: 0.413
+Creating profile with params: {'client_ips': 65536, 'templates': 4096, 'server_ips': 256}
+Profile size: 2761718
+Load took: 0.868
+Start took: 1.52
+Creating profile with params: {'client_ips': 65536, 'templates': 1, 'server_ips': 65536}
+Profile size: 49145
+Load took: 0.01
+Start took: 0.994
+Creating profile with params: {'client_ips': 65536, 'templates': 256, 'server_ips': 65536}
+Profile size: 217945
+Load took: 0.082
+Start took: 1.355
+Creating profile with params: {'client_ips': 65536, 'templates': 4096, 'server_ips': 65536}
+Profile size: 2762828
+Load took: 0.901
+Start took: 2.361
+]]></system-out></testcase><testcase classname="astf_tests.astf_resilience_test.ASTFResilience_Test" name="test_astf_params_dynamic_profile" time="40.039"><system-out><![CDATA[
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 256}
+Profile size: 50255
+Creating random name for the dynamic profile
+Dynamic profile name : aobvaikxja
+Load took: 0.01
+Start took: 1.521
+Creating profile with params: {'client_ips': 256, 'templates': 256, 'server_ips': 256}
+Profile size: 219055
+Creating random name for the dynamic profile
+Dynamic profile name : agfuqnbswc
+Load took: 0.072
+Start took: 1.581
+Creating profile with params: {'client_ips': 256, 'templates': 4096, 'server_ips': 256}
+Profile size: 2763938
+Creating random name for the dynamic profile
+Dynamic profile name : wvootyeaqx
+Load took: 0.906
+Start took: 2.239
+Creating profile with params: {'client_ips': 256, 'templates': 1, 'server_ips': 65536}
+Profile size: 51365
+Creating random name for the dynamic profile
+Dynamic profile name : fjjhuutgws
+Load took: 0.01
+Start took: 1.406
+Creating profile with params: {'client_ips': 256, 'templates': 256, 'server_ips': 65536}
+Profile size: 220165
+Creating random name for the dynamic profile
+Dynamic profile name : abkaqcfnec
+Load took: 0.077
+Start took: 1.529
+Creating profile with params: {'client_ips': 256, 'templates': 4096, 'server_ips': 65536}
+Profile size: 2765048
+Creating random name for the dynamic profile
+Dynamic profile name : wlwhcnhrsa
+Load took: 0.873
+Start took: 2.195
+Creating profile with params: {'client_ips': 65536, 'templates': 1, 'server_ips': 256}
+Profile size: 52475
+Creating random name for the dynamic profile
+Dynamic profile name : yixrnaxmrk
+Load took: 0.01
+Start took: 1.652
+Creating profile with params: {'client_ips': 65536, 'templates': 256, 'server_ips': 256}
+Profile size: 221275
+Creating random name for the dynamic profile
+Dynamic profile name : hqlfnunyzq
+Load took: 0.072
+Start took: 1.984
+Creating profile with params: {'client_ips': 65536, 'templates': 4096, 'server_ips': 256}
+Profile size: 2766158
+Creating random name for the dynamic profile
+Dynamic profile name : egnolanbkq
+Load took: 0.899
+Start took: 2.859
+Creating profile with params: {'client_ips': 65536, 'templates': 1, 'server_ips': 65536}
+Profile size: 53585
+Creating random name for the dynamic profile
+Dynamic profile name : dlnpuqtpcx
+Load took: 0.011
+Start took: 2.274
+Creating profile with params: {'client_ips': 65536, 'templates': 256, 'server_ips': 65536}
+Profile size: 222385
+Creating random name for the dynamic profile
+Dynamic profile name : olsocvfccu
+Load took: 0.072
+Start took: 2.597
+Creating profile with params: {'client_ips': 65536, 'templates': 4096, 'server_ips': 65536}
+Profile size: 2767268
+Creating random name for the dynamic profile
+Dynamic profile name : bxorvlcmgv
+Load took: 0.905
+Start took: 3.431
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_edge_cases" time="21.876"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_edge_cases_dynamic_profile" time="22.009"><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : lqckhbzpqe
+Creating random name for the dynamic profile
+Dynamic profile name : smbgzwvzmi
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_general" time="63.220"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_load" time="9.484"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_load_dynamic_profile" time="9.413"><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : wdrayydxft
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_long" time="65.917"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_negative" time="53.606"></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_negative_dynamic_profile" time="4.728"><error type="trex.common.trex_exceptions.TRexError" message="'wait_on_traffic' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_template_group_test.py", line 467, in test_astf_template_group_negative_dynamic_profile
+    self.c.wait_on_traffic()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/astf/trex_astf_client.py", line 780, in wait_on_traffic
+    TRexClient.wait_on_traffic(self, ports, timeout)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'wait_on_traffic' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : ygkxdxdnis
+]]></system-out></testcase><testcase classname="astf_tests.astf_template_group_test.ASTFTemplateGroup_Test" name="test_astf_template_group_negative_dynamic_profile" time="4.731"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[Creating random name for the dynamic profile
+Dynamic profile name : ygkxdxdnis
+]]></system-out></testcase><testcase classname="astf_tests.astf_topo_test.ASTFTopology_Test" name="test_topo_negative" time="13.728"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_topo_test.py", line 47, in tearDown
+    CASTFGeneral_Test.tearDown(self)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_topo_test.ASTFTopology_Test" name="test_topo_resolve" time="2.510"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_topo_test.py", line 47, in tearDown
+    CASTFGeneral_Test.tearDown(self)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_topo_test.ASTFTopology_Test" name="test_topo_save_load_and_coverage" time="0.229"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_topo_test.py", line 47, in tearDown
+    CASTFGeneral_Test.tearDown(self)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+
+
+
+]]></system-out></testcase><testcase classname="astf_tests.astf_topo_test.ASTFTopology_Test" name="test_topo_traffic" time="3.350"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_topo_test.py", line 47, in tearDown
+    CASTFGeneral_Test.tearDown(self)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+
+All the captures got filled
+]]></system-out></testcase><testcase classname="astf_tests.astf_topo_test.ASTFTopology_Test" name="test_topo_zzz_coverage" time="0.259"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_topo_test.py", line 47, in tearDown
+    CASTFGeneral_Test.tearDown(self)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_config_vlan" time="0.155"></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_latency_vlan" time="2.235"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+Expected 20 IPv4 pkts without VLAN, got 20
+Expected 20 IPv4 pkts with VLAN, got 20
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_ping_vlan" time="1.659"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+TX port without VLAN, RX port without VLAN
+Got reply as expected
+TX port with VLAN, RX port without VLAN
+Got no reply as expected
+TX port with VLAN, RX port with VLAN
+Got reply as expected
+TX port without VLAN, RX port with VLAN
+Got no reply as expected
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_resolve_vlan" time="9.943"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[2019-10-28 11:39:05 - [server][warning]  - Server has been shutdown - cause: 'CTRL + C detected'
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan" time="3.009"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_vlan_test.py", line 157, in test_traffic_vlan
+    c.load_profile(self.get_profile(src_ip_start, src_ip_end))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan" time="3.010"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan_dynamic_profile" time="0.002"><error type="trex.common.trex_exceptions.TRexError" message="'load_profile' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 332, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_vlan_test.py", line 198, in test_traffic_vlan_dynamic_profile
+    c.load_profile(self.get_profile(src_ip_start, src_ip_end), pid_input=str(random_profile))
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'load_profile' - connection to the server had been lost: 'CTRL + C detected'
+]]></error><system-out><![CDATA[
+Creating random name for the dynamic profile
+Dynamic profile name : yffjqavfbk
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="test_traffic_vlan_dynamic_profile" time="0.002"><error type="exceptions.IOError" message="[Errno 32] Broken pipe"><![CDATA[Traceback (most recent call last):
+  File "/sw/packages/python/2.7.4/lib/python2.7/unittest/case.py", line 361, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateful_tests/trex_general_test.py", line 508, in tearDown
+    sys.stdout.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "trex_unit_test.py", line 151, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/plugins/xunit.py", line 134, in flush
+    s.flush()
+IOError: [Errno 32] Broken pipe
+]]></error><system-out><![CDATA[
+Creating random name for the dynamic profile
+Dynamic profile name : yffjqavfbk
+]]></system-out></testcase><testcase classname="astf_tests.astf_vlan_test.ASTFVLAN_Test" name="ASTFVLAN_Test:teardown" time="0.014"><error type="trex.common.trex_exceptions.TRexError" message="'clear_vlan' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 228, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 351, in tearDown
+    self.teardownContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 367, in teardownContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/astf_tests/astf_vlan_test.py", line 46, in tearDownClass
+    c.clear_vlan(cls.ports)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 45, in wrap2
+    raise TRexError("'{0}' - connection to the server had been lost: '{1}'".format(func_name, client.conn.get_disconnection_cause()))
+TRexError: 'clear_vlan' - connection to the server had been lost: 'CTRL + C detected'
+]]></error></testcase></testsuite>

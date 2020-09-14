@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="60" errors="30" failures="2" skip="3"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="0.745"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0, 2: 3, 3: 2}, 'bi': [(0, 1), (2, 3)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_benchmark_test.STLBenchmark_Test" name="test_CPU_benchmark" time="297.705"><system-out><![CDATA[
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64}
+Done (18s), CPU util: 11.6824, norm_pps_per_core:  5.09mpps norm_bw_per_core:   2.61Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 64}
+Done (9s), CPU util: 13.1823, norm_pps_per_core:  4.45mpps norm_bw_per_core:   2.28Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 64}
+Done (12s), CPU util: 17.1791, norm_pps_per_core:  3.45mpps norm_bw_per_core:   1.77Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 128}
+Done (14s), CPU util: 7.87481, norm_pps_per_core:  4.29mpps norm_bw_per_core:   4.39Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 256}
+Done (11s), CPU util: 4.51688, norm_pps_per_core:   4.0mpps norm_bw_per_core:   8.17Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 512}
+Done (9s), CPU util: 2.40422, norm_pps_per_core:  3.88mpps norm_bw_per_core:  15.77Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 1500}
+Done (12s), CPU util: 1.17402, norm_pps_per_core:   2.8mpps norm_bw_per_core:  33.58Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 4000}
+Done (8s), CPU util: 0.857442, norm_pps_per_core:  1.44mpps norm_bw_per_core:  44.94Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 9000}
+Done (8s), CPU util: 0.76913, norm_pps_per_core:  0.72mpps norm_bw_per_core:   50.4Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 9000}
+Done (10s), CPU util: 0.713452, norm_pps_per_core:  0.77mpps norm_bw_per_core:  55.69Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 9000}
+Done (8s), CPU util: 0.871128, norm_pps_per_core:  0.62mpps norm_bw_per_core:  44.92Gb/core
+Testing profile stl/imix.py, kwargs: {}
+Done (17s), CPU util: 8.87589, norm_pps_per_core:  1.48mpps norm_bw_per_core:   4.27Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 64}
+Done (15s), CPU util: 33.0429, norm_pps_per_core:   1.8mpps norm_bw_per_core:   0.92Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 128}
+Done (9s), CPU util: 19.9161, norm_pps_per_core:  1.68mpps norm_bw_per_core:   1.71Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 256}
+Done (6s), CPU util: 12.8997, norm_pps_per_core:  1.35mpps norm_bw_per_core:   2.64Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 512}
+Done (14s), CPU util: 6.48829, norm_pps_per_core:  1.45mpps norm_bw_per_core:   5.92Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 1500}
+Done (18s), CPU util: 1.87143, norm_pps_per_core:  1.76mpps norm_bw_per_core:  21.09Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 4000}
+Done (6s), CPU util: 1.34433, norm_pps_per_core:  0.93mpps norm_bw_per_core:   27.3Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 9000}
+Done (6s), CPU util: 1.04831, norm_pps_per_core:  0.51mpps norm_bw_per_core:  34.93Gb/core
+Testing profile stl/pcap.py, kwargs: {'loop_count': 0, 'ipg_usec': 4}
+Done (15s), CPU util: 6.14465, norm_pps_per_core:  4.07mpps norm_bw_per_core:   2.68Gb/core
+Testing profile stl/udp_rand_len_9k.py, kwargs: {}
+Done (14s), CPU util: 2.08317, norm_pps_per_core:  0.56mpps norm_bw_per_core:  19.13Gb/core
+Testing profile stl/hlt/hlt_udp_rand_len_9k.py, kwargs: {}
+Done (6s), CPU util: 1.82216, norm_pps_per_core:  0.58mpps norm_bw_per_core:  20.17Gb/core
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_arp_capture" time="0.917"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_basic_capture" time="1.362"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_ping_capture" time="7.829"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_rx_from_capture_port_with_filter" time="1.923"><system-out><![CDATA[Done (0.9s),  11.14 RX pps
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_capture" time="24.527"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_tx_rx" time="24.549"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_tx_from_capture_port" time="2.851"><system-out><![CDATA[Done, 10169616.0 TX pps
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_all_profiles" time="46.891"><system-out><![CDATA[
+Profile: /stl/bench.py
+
+Profile: /stl/burst_3st_1000pkt.py
+
+Profile: /stl/burst_3st_600pkt.py
+
+Profile: /stl/burst_3st_loop_x_times.py
+
+Profile: /stl/burst_simple.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/burst_split.py
+
+Profile: /stl/flow_stats.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/flow_stats_latency.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/imix.py
+
+Profile: /stl/imix_wlc.py
+  * Skip due to global ignore of this profile...
+
+Profile: /stl/multi_burst_2st_1000pkt.py
+
+Profile: /stl/pcap.py
+
+Profile: /stl/pcap_with_vm.py
+
+Profile: /stl/simple_3st.py
+
+Profile: /stl/syn_attack.py
+
+Profile: /stl/syn_attack_fix_cs_hw.py
+
+Profile: /stl/udp_1pkt.py
+
+Profile: /stl/udp_1pkt_1mac.py
+
+Profile: /stl/udp_1pkt_1mac_override.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/udp_1pkt_1mac_step.py
+
+Profile: /stl/udp_1pkt_dns.py
+
+Profile: /stl/udp_1pkt_ipv6_in_ipv4.py
+
+Profile: /stl/udp_1pkt_mac.py
+
+Profile: /stl/udp_1pkt_mac_mask1.py
+
+Profile: /stl/udp_1pkt_mac_mask2.py
+
+Profile: /stl/udp_1pkt_mac_mask3.py
+
+Profile: /stl/udp_1pkt_mac_mask5.py
+
+Profile: /stl/udp_1pkt_mac_step.py
+
+Profile: /stl/udp_1pkt_mpls.py
+
+Profile: /stl/udp_1pkt_mpls_vm.py
+
+Profile: /stl/udp_1pkt_pcap.py
+
+Profile: /stl/udp_1pkt_pcap_relative_path.py
+
+Profile: /stl/udp_1pkt_range_clients.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/udp_1pkt_range_clients_split.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/udp_1pkt_range_clients_split_garp.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/udp_1pkt_repeat_random.py
+
+Profile: /stl/udp_1pkt_simple.py
+
+Profile: /stl/udp_1pkt_simple_bdir.py
+
+Profile: /stl/udp_1pkt_simple_burst.py
+
+Profile: /stl/udp_1pkt_simple_list_test.py
+
+Profile: /stl/udp_1pkt_simple_mac_dst.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/udp_1pkt_simple_mac_dst_src.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/udp_1pkt_simple_mac_src.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+
+Profile: /stl/udp_1pkt_simple_test.py
+
+Profile: /stl/udp_1pkt_simple_test2.py
+
+Profile: /stl/udp_1pkt_src_ip_split.py
+
+Profile: /stl/udp_1pkt_tuple_gen.py
+
+Profile: /stl/udp_1pkt_tuple_gen_split.py
+
+Profile: /stl/udp_1pkt_vxlan.py
+
+Profile: /stl/udp_3pkt_pcap.py
+
+Profile: /stl/udp_for_benchmarks.py
+
+Profile: /stl/udp_inc_len_9k.py
+
+Profile: /stl/udp_inc_len_list.py
+
+Profile: /stl/udp_multi_simple_list_test.py
+
+Profile: /stl/udp_rand_len_9k.py
+
+Profile: /stl/udp_1pkt_src_ip_split_core_pinned.py
+
+Profile: /stl/dependent_field_engine_vars.py
+
+Profile: /stl/udp_1pkt_src_ip_split_latency.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/dependent_vars_all.py
+
+Profile: /stl/imix_ipv6.py
+
+Profile: /stl/split_var_to_cores.py
+
+Profile: /stl/udp_1pkt_frag.py
+
+Profile: /stl/udp_1pkt_multi_stream.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/udp_1pkt_dot1q.py
+  * Skip due to global ignore of this profile...
+
+Profile: /stl/udp_1pkt_multi.py
+  * Skip due to global ignore of this profile...
+
+Profile: /stl/dev.py
+  * Skip due to VF NICs and promiscuous mode requirement...
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_connect_disconnect" time="1.413"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont" time="5.756"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont_dynamic_profile" time="62.645"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_multi_burst" time="5.279"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_single_burst" time="5.360"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_bpf" time="4.976"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning" time="1.763"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning_latency" time="1.984"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume" time="1.998"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume_dynamic_profile" time="98.611"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_dynamic_profile" time="31.471"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_streams" time="18.262"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pcap_remote" time="2.133"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_push_pcap" time="1.146"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_random_duration_dynamic_profile" time="98.123"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_connect_disconnect" time="1.951"><failure type="exceptions.AssertionError" message="'clear_stats' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 234, in test_stress_connect_disconnect
+    assert False , '{0}'.format(e)
+AssertionError: 'clear_stats' - interrupted by a keyboard signal (probably ctrl + c)
+]]></failure></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_tx" time="3.044"><failure type="exceptions.AssertionError" message="'get_all_ports' - connection to the server had been lost: 'CTRL + C detected'"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 305, in test_stress_tx
+    assert False , '{0}'.format(e)
+AssertionError: 'get_all_ports' - connection to the server had been lost: 'CTRL + C detected'
+]]></failure></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_tx_from_rx" time="1.004"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 45, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1228, in connect
+    raise TRexError(rc)
+TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="STLClient_Test:teardown" time="2.010"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 228, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 351, in tearDown
+    self.teardownContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 367, in teardownContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_client_test.py", line 77, in tearDownClass
+    CTRexScenario.stl_trex.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1228, in connect
+    raise TRexError(rc)
+TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_negative" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_cores" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_streams" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single_burst_loop" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_server_system_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_core_id_pinning_test.py", line 18, in setUp
+    self.num_cores = self.c.get_server_system_info().get('dp_core_count_per_port')
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_server_system_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_examples_test.STLExamples_Test" name="test_stl_examples" time="2.478"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 331, in run
+    testMethod()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_examples_test.py", line 30, in test_stl_examples
+    self.explicitTearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_examples_test.py", line 17, in explicitTearDown
+    self.stl_trex.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1228, in connect
+    raise TRexError(rc)
+TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m
+]]></error><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/interactive; /usr/cisco/bin/python -m trex.examples.stl.stl_imix -s 10.56.216.155'
+Stdout:
+*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501
+
+Return code: 1
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_ipv6_ping_linux_based_stack" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'reset' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_ipv6_test.py", line 13, in setUp
+    self.stl_trex.reset()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'reset' - is not valid while disconnected
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_ping" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'reset' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_ipv6_test.py", line 13, in setUp
+    self.stl_trex.reset()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'reset' - is not valid while disconnected
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_scan6" time="0.002"><error type="trex.common.trex_exceptions.TRexError" message="'reset' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_ipv6_test.py", line 13, in setUp
+    self.stl_trex.reset()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'reset' - is not valid while disconnected
+]]></error><system-out><![CDATA[
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_many_ns" time="0.000"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ns_add_remove" time="0.000"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ping_to_ns" time="0.000"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_multi_cpus" time="1.005"><error type="trex.common.trex_exceptions.TRexError" message="?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_performance_test.py", line 116, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 51, in wrap2
+    ret = f(*args, **kwargs)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_client.py", line 1228, in connect
+    raise TRexError(rc)
+TRexError: ?[1m*** [RPC] - Failed to get server response from tcp://10.56.216.155:4501?[22m
+]]></error></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_single_cpu" time="0.084"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_performance_test.py", line 116, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus" time="0.302"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_performance_test.py", line 116, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus_cached" time="0.280"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_performance_test.py", line 116, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu" time="0.224"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_performance_test.py", line 116, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu_cached" time="0.500"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_performance_test.py", line 116, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_1_stream_many_iterations" time="0.003"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_9k_stream" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_fcs_stream" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_incremental_latency_streams" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams_random" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_one_stream" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_service_mode_flow_stats" time="0.002"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_vxlan_fs" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_x710_counters_wraparound" time="0.001"><error type="trex.common.trex_exceptions.TRexError" message="'get_port_info' - is not valid while disconnected"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 24, in setUp
+    port_info = self.c.get_port_info(ports = self.rx_port)[0]
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 48, in wrap2
+    raise TRexError("'{0}' - is not valid while disconnected".format(func_name))
+TRexError: 'get_port_info' - is not valid while disconnected
+]]></error></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="STLRX_Test:teardown" time="0.020"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 228, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 351, in tearDown
+    self.teardownContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 367, in teardownContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_rx_test.py", line 187, in tearDownClass
+    CTRexScenario.stl_trex.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_services_test.STLServices_Test" name="test_arp_service" time="0.035"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/usr/cisco/depot/python/lib/python2.7/unittest/case.py", line 322, in run
+    self.setUp()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_services_test.py", line 30, in setUp
+    self.c.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase><testcase classname="stateless_tests.stl_services_test.STLServices_Test" name="STLServices_Test:teardown" time="0.059"><error type="trex.common.trex_exceptions.TRexError" message="'connect' - interrupted by a keyboard signal (probably ctrl + c)"><![CDATA[Traceback (most recent call last):
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 228, in run
+    self.tearDown()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 351, in tearDown
+    self.teardownContext(ancestor)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/suite.py", line 367, in teardownContext
+    try_run(context, names)
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/external_libs/nose-1.3.4/python2/nose/util.py", line 470, in try_run
+    return func()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/regression/stateless_tests/stl_services_test.py", line 49, in tearDownClass
+    CTRexScenario.stl_trex.connect()
+  File "/auto/srg-sce-swinfra-usr/emb/users/hhaim/work/depot/asr1k/emb/private/hhaim/bp_sim_git/trex-core/scripts/automation/trex_control_plane/interactive/trex/common/trex_api_annotators.py", line 58, in wrap2
+    raise TRexError("'{0}' - interrupted by a keyboard signal (probably ctrl + c)".format(func_name))
+TRexError: 'connect' - interrupted by a keyboard signal (probably ctrl + c)
+]]></error></testcase></testsuite>

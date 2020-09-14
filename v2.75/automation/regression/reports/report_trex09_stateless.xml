@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="45" errors="0" failures="0" skip="5"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="0.877"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0, 2: 3, 3: 2, 4: 5, 5: 4, 6: 7, 7: 6}, 'bi': [(0, 1), (2, 3), (4, 5), (6, 7)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_benchmark_test.STLBenchmark_Test" name="test_CPU_benchmark" time="236.732"><system-out><![CDATA[
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64}
+Done (12s), CPU util: 2.63926, norm_pps_per_core: 37.43mpps norm_bw_per_core:  19.16Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 64}
+Done (7s), CPU util: 3.39848, norm_pps_per_core: 28.77mpps norm_bw_per_core:  14.73Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 64}
+Done (8s), CPU util: 4.25573, norm_pps_per_core: 23.09mpps norm_bw_per_core:  11.82Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 128}
+Done (9s), CPU util: 1.7585, norm_pps_per_core: 31.91mpps norm_bw_per_core:  32.62Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 256}
+Done (5s), CPU util: 1.01444, norm_pps_per_core:  29.1mpps norm_bw_per_core:  57.83Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 512}
+Done (6s), CPU util: 0.520592, norm_pps_per_core: 29.76mpps norm_bw_per_core: 120.08Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 1500}
+Done (10s), CPU util: 0.157053, norm_pps_per_core: 34.84mpps norm_bw_per_core: 417.41Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 4000}
+Done (11s), CPU util: 0.0619883, norm_pps_per_core: 33.37mpps norm_bw_per_core: 1067.06Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 9000}
+Done (4s), CPU util: 0.0410197, norm_pps_per_core: 22.35mpps norm_bw_per_core: 1474.15Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 9000}
+Done (3s), CPU util: 0.0301953, norm_pps_per_core: 23.09mpps norm_bw_per_core: 1654.01Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 9000}
+Done (21s), CPU util: 0.0493562, norm_pps_per_core: 18.67mpps norm_bw_per_core: 1344.46Gb/core
+Testing profile stl/imix.py, kwargs: {}
+Done (11s), CPU util: 2.85219, norm_pps_per_core:  7.62mpps norm_bw_per_core:  22.08Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 64}
+Done (10s), CPU util: 13.6469, norm_pps_per_core:  7.23mpps norm_bw_per_core:    3.7Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 128}
+Done (5s), CPU util: 7.40082, norm_pps_per_core:  7.49mpps norm_bw_per_core:   7.49Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 256}
+Done (3s), CPU util: 4.93469, norm_pps_per_core:  5.51mpps norm_bw_per_core:   8.96Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 512}
+Done (9s), CPU util: 2.08965, norm_pps_per_core:  7.47mpps norm_bw_per_core:  30.54Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 1500}
+Done (9s), CPU util: 0.853109, norm_pps_per_core:  6.41mpps norm_bw_per_core:  76.66Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 4000}
+Done (13s), CPU util: 0.202384, norm_pps_per_core: 10.22mpps norm_bw_per_core: 326.79Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 9000}
+Done (6s), CPU util: 0.0982668, norm_pps_per_core:  9.35mpps norm_bw_per_core: 660.95Gb/core
+Testing profile stl/pcap.py, kwargs: {'loop_count': 0, 'ipg_usec': 2}
+Done (11s), CPU util: 1.1748, norm_pps_per_core: 28.22mpps norm_bw_per_core:  18.65Gb/core
+Testing profile stl/udp_rand_len_9k.py, kwargs: {}
+Done (13s), CPU util: 0.244364, norm_pps_per_core:  7.84mpps norm_bw_per_core: 271.26Gb/core
+Testing profile stl/hlt/hlt_udp_rand_len_9k.py, kwargs: {}
+Done (4s), CPU util: 0.20017, norm_pps_per_core:  8.82mpps norm_bw_per_core: 306.05Gb/core
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_arp_capture" time="0.709"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_basic_capture" time="1.481"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_ping_capture" time="9.730"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_rx_from_capture_port_with_filter" time="1.710"><system-out><![CDATA[Done (0.9s),  11.06 RX pps
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_capture" time="39.617"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_tx_rx" time="59.254"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_tx_from_capture_port" time="2.765"><system-out><![CDATA[Done, 5707825.5 TX pps
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_all_profiles" time="24.663"><system-out><![CDATA[
+Profile: /stl/bench.py
+
+Profile: /stl/burst_3st_1000pkt.py
+
+Profile: /stl/burst_3st_600pkt.py
+
+Profile: /stl/burst_3st_loop_x_times.py
+
+Profile: /stl/burst_simple.py
+
+Profile: /stl/burst_split.py
+
+Profile: /stl/flow_stats.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/flow_stats_latency.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/imix.py
+
+Profile: /stl/imix_wlc.py
+  * Skip due to global ignore of this profile...
+
+Profile: /stl/multi_burst_2st_1000pkt.py
+
+Profile: /stl/pcap.py
+
+Profile: /stl/pcap_with_vm.py
+
+Profile: /stl/simple_3st.py
+
+Profile: /stl/syn_attack.py
+
+Profile: /stl/syn_attack_fix_cs_hw.py
+
+Profile: /stl/udp_1pkt.py
+
+Profile: /stl/udp_1pkt_1mac.py
+
+Profile: /stl/udp_1pkt_1mac_override.py
+
+Profile: /stl/udp_1pkt_1mac_step.py
+
+Profile: /stl/udp_1pkt_dns.py
+
+Profile: /stl/udp_1pkt_ipv6_in_ipv4.py
+
+Profile: /stl/udp_1pkt_mac.py
+
+Profile: /stl/udp_1pkt_mac_mask1.py
+
+Profile: /stl/udp_1pkt_mac_mask2.py
+
+Profile: /stl/udp_1pkt_mac_mask3.py
+
+Profile: /stl/udp_1pkt_mac_mask5.py
+
+Profile: /stl/udp_1pkt_mac_step.py
+
+Profile: /stl/udp_1pkt_mpls.py
+
+Profile: /stl/udp_1pkt_mpls_vm.py
+
+Profile: /stl/udp_1pkt_pcap.py
+
+Profile: /stl/udp_1pkt_pcap_relative_path.py
+
+Profile: /stl/udp_1pkt_range_clients.py
+
+Profile: /stl/udp_1pkt_range_clients_split.py
+
+Profile: /stl/udp_1pkt_range_clients_split_garp.py
+
+Profile: /stl/udp_1pkt_repeat_random.py
+
+Profile: /stl/udp_1pkt_simple.py
+
+Profile: /stl/udp_1pkt_simple_bdir.py
+
+Profile: /stl/udp_1pkt_simple_burst.py
+
+Profile: /stl/udp_1pkt_simple_list_test.py
+
+Profile: /stl/udp_1pkt_simple_mac_dst.py
+
+Profile: /stl/udp_1pkt_simple_mac_dst_src.py
+
+Profile: /stl/udp_1pkt_simple_mac_src.py
+
+Profile: /stl/udp_1pkt_simple_test.py
+
+Profile: /stl/udp_1pkt_simple_test2.py
+
+Profile: /stl/udp_1pkt_src_ip_split.py
+
+Profile: /stl/udp_1pkt_tuple_gen.py
+
+Profile: /stl/udp_1pkt_tuple_gen_split.py
+
+Profile: /stl/udp_1pkt_vxlan.py
+
+Profile: /stl/udp_3pkt_pcap.py
+
+Profile: /stl/udp_for_benchmarks.py
+
+Profile: /stl/udp_inc_len_9k.py
+
+Profile: /stl/udp_inc_len_list.py
+
+Profile: /stl/udp_multi_simple_list_test.py
+
+Profile: /stl/udp_rand_len_9k.py
+
+Profile: /stl/udp_1pkt_src_ip_split_core_pinned.py
+
+Profile: /stl/dependent_field_engine_vars.py
+
+Profile: /stl/udp_1pkt_src_ip_split_latency.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/dependent_vars_all.py
+
+Profile: /stl/imix_ipv6.py
+
+Profile: /stl/split_var_to_cores.py
+
+Profile: /stl/udp_1pkt_frag.py
+
+Profile: /stl/udp_1pkt_multi_stream.py
+  * Skip due to RX caps requirement
+
+Profile: /stl/udp_1pkt_dot1q.py
+  * Skip due to global ignore of this profile...
+
+Profile: /stl/udp_1pkt_multi.py
+  * Skip due to global ignore of this profile...
+
+Profile: /stl/dev.py
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_connect_disconnect" time="1.212"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont" time="1.917"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont_dynamic_profile" time="63.933"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_multi_burst" time="1.458"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_single_burst" time="1.430"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_bpf" time="4.304"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning" time="1.330"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning_latency" time="1.364"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume" time="1.913"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume_dynamic_profile" time="73.772"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_dynamic_profile" time="30.459"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_streams" time="16.376"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pcap_remote" time="1.198"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_push_pcap" time="0.995"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_random_duration_dynamic_profile" time="102.090"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_random_dynamic_add_remove" time="180.190"><system-out><![CDATA[ 1 new profile 0.profile_0 37 1
+ 3 new profile 0.profile_1 7 2
+ 5 new profile 0.profile_2 25 3
+ 7 new profile 0.profile_3 23 4
+ 9 new profile 0.profile_4 41 5
+ 10 del profile 1 4
+ 11 new profile 0.profile_5 48 5
+ 13 new profile 0.profile_6 5 6
+ 15 new profile 0.profile_7 23 7
+ 17 new profile 0.profile_8 28 8
+ 18 del profile 6 7
+ 19 new profile 0.profile_9 22 8
+ 21 new profile 0.profile_10 16 9
+ 23 new profile 0.profile_11 22 10
+ 25 new profile 0.profile_12 44 11
+ 27 new profile 0.profile_13 8 12
+ 28 del profile 2 11
+ 28 del profile 3 10
+ 29 new profile 0.profile_14 40 11
+ 31 new profile 0.profile_15 17 12
+ 33 new profile 0.profile_16 29 13
+ 34 del profile 0 12
+ 35 del profile 13 11
+ 35 new profile 0.profile_17 19 12
+ 36 del profile 10 11
+ 36 del profile 7 10
+ 37 new profile 0.profile_18 30 11
+ 39 del profile 9 10
+ 39 new profile 0.profile_19 29 11
+ 41 new profile 0.profile_20 36 12
+ 42 del profile 8 11
+ 43 del profile 11 10
+ 43 new profile 0.profile_21 9 11
+ 45 new profile 0.profile_22 45 12
+ 46 del profile 4 11
+ 47 del profile 15 10
+ 47 new profile 0.profile_23 31 11
+ 49 new profile 0.profile_24 12 12
+ 51 new profile 0.profile_25 47 13
+ 52 del profile 21 12
+ 52 del profile 17 11
+ 53 new profile 0.profile_26 27 12
+ 54 del profile 5 11
+ 55 new profile 0.profile_27 16 12
+ 57 new profile 0.profile_28 29 13
+ 59 del profile 16 12
+ 59 new profile 0.profile_29 16 13
+ 60 del profile 24 12
+ 61 new profile 0.profile_30 8 13
+ 63 new profile 0.profile_31 39 14
+ 64 del profile 18 13
+ 65 del profile 12 12
+ 65 del profile 14 11
+ 65 del profile 19 10
+ 65 new profile 0.profile_32 31 11
+ 67 new profile 0.profile_33 21 12
+ 69 del profile 30 11
+ 69 new profile 0.profile_34 46 12
+ 70 del profile 27 11
+ 71 new profile 0.profile_35 32 12
+ 73 new profile 0.profile_36 21 13
+ 74 del profile 20 12
+ 74 del profile 29 11
+ 75 del profile 23 10
+ 75 new profile 0.profile_37 31 11
+ 77 new profile 0.profile_38 12 12
+ 78 del profile 26 11
+ 79 new profile 0.profile_39 46 12
+ 81 new profile 0.profile_40 22 13
+ 83 del profile 28 12
+ 83 new profile 0.profile_41 1 13
+ 85 del profile 41 12
+ 85 new profile 0.profile_42 25 13
+ 86 del profile 22 12
+ 86 del profile 33 11
+ 87 new profile 0.profile_43 29 12
+ 88 del profile 38 11
+ 89 new profile 0.profile_44 13 12
+ 91 new profile 0.profile_45 8 13
+ 92 del profile 36 12
+ 93 del profile 32 11
+ 93 del profile 25 10
+ 93 new profile 0.profile_46 29 11
+ 95 new profile 0.profile_47 16 12
+ 97 new profile 0.profile_48 29 13
+ 98 del profile 31 12
+ 99 del profile 45 11
+ 99 new profile 0.profile_49 13 12
+ 100 del profile 35 11
+ 101 del profile 40 10
+ 101 del profile 44 9
+ 101 new profile 0.profile_50 22 10
+ 103 del profile 37 9
+ 103 new profile 0.profile_51 1 10
+ 105 del profile 51 9
+ 105 new profile 0.profile_52 30 10
+ 107 new profile 0.profile_53 6 11
+ 108 del profile 42 10
+ 109 new profile 0.profile_54 36 11
+ 110 del profile 47 10
+ 110 del profile 34 9
+ 111 del profile 49 8
+ 111 new profile 0.profile_55 19 9
+ 113 del profile 53 8
+ 113 del profile 43 7
+ 113 new profile 0.profile_56 16 8
+ 115 new profile 0.profile_57 49 9
+ 117 new profile 0.profile_58 28 10
+ 119 del profile 46 9
+ 119 new profile 0.profile_59 28 10
+ 120 del profile 39 9
+ 121 del profile 50 8
+ 124 del profile 48 7
+ 129 del profile 56 6
+ 130 del profile 55 5
+ 134 del profile 52 4
+ 144 del profile 54 3
+ 145 del profile 58 2
+ 148 del profile 59 1
+ 164 del profile 57 0
+stop
+[]
+ diff 0 
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_connect_disconnect" time="24.902"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_tx" time="4.393"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_tx_from_rx" time="3.538"></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_negative" time="0.739"><system-out><![CDATA[
+Cores that belong to port 0: [0, 4, 8]
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_cores" time="1.145"></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_streams" time="0.659"></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single" time="2.199"></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single_burst_loop" time="0.632"></testcase><testcase classname="stateless_tests.stl_cpp_tests.STLCPP_Test" name="test_mlx5_xstats" time="0.010"><skipped type="unittest.case.SkipTest" message="Test is only for mlx5, this is: net_i40e"><![CDATA[SkipTest: Test is only for mlx5, this is: net_i40e
+]]></skipped><system-out><![CDATA[
+Skip: Test is only for mlx5, this is: net_i40e
+]]></system-out></testcase><testcase classname="stateless_tests.stl_examples_test.STLExamples_Test" name="test_stl_examples" time="12.503"><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/interactive; /router/bin/python-2.7.9 -m trex.examples.stl.stl_imix -s 10.56.216.129'
+Stdout:
+Mapped ports to sides [0, 2, 4, 6] <--> [1, 3, 5, 7]
+Injecting [0, 2, 4, 6] <--> [1, 3, 5, 7] on total rate of '30%' for 10 seconds
+
+Packets injected from [0, 2, 4, 6]: 4,910,524
+Packets injected from [1, 3, 5, 7]: 4,910,524
+
+packets lost from [0, 2, 4, 6] --> [0, 2, 4, 6]:   0 pkts
+packets lost from [1, 3, 5, 7] --> [1, 3, 5, 7]:   0 pkts
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_ipv6_ping_linux_based_stack" time="0.289"><skipped type="unittest.case.SkipTest" message="Relevant only for Linux-based stack in loopback"><![CDATA[SkipTest: Relevant only for Linux-based stack in loopback
+]]></skipped><system-out><![CDATA[
+Skip: Relevant only for Linux-based stack in loopback
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_ping" time="27.936"><system-out><![CDATA[
+No IPv6 replies in loopback as expected.
+Got no replies from non-existing IPv6 1234::1234 as expected.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_scan6" time="3.466"><system-out><![CDATA[
+No devices found in loopback as expected.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_many_ns" time="0.001"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ns_add_remove" time="0.001"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ping_to_ns" time="0.001"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_multi_cpus" time="72.229"><system-out><![CDATA[
+Executing performance scenario: 'syn attack - 64 bytes, multi CPUs'
+
+Step 1 - waiting for stabilization... (10 seconds)
+..........
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                syn attack - 64 bytes, multi CPUs
+machine name:                            trex09
+DP core count:                           2
+average CPU:                             110.933333333
+average Gbps:                            6.84026984107
+average Mpps:                            13.3599018667
+average pkt size (bytes):                64.0000007984
+average Gbps per core (at 100% CPU):     6.16610863077
+average Mpps per core (at 100% CPU):     12.0431807692
+
+golden Mpps per core (at 100% CPU):      min: 11.0, max 12.4
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_single_cpu" time="72.311"><system-out><![CDATA[
+Executing performance scenario: 'syn attack - 64 bytes, single CPU'
+
+Step 1 - waiting for stabilization... (10 seconds)
+..........
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                syn attack - 64 bytes, single CPU
+machine name:                            trex09
+DP core count:                           1
+average CPU:                             100.0
+average Gbps:                            6.5350103296
+average Mpps:                            12.7636919833
+average pkt size (bytes):                64.0000003343
+average Gbps per core (at 100% CPU):     6.5350103296
+average Mpps per core (at 100% CPU):     12.7636919833
+
+golden Mpps per core (at 100% CPU):      min: 11.0, max 13.1
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus" time="72.246"><system-out><![CDATA[
+Executing performance scenario: 'VM - 64 bytes, multi CPUs'
+
+Step 1 - waiting for stabilization... (10 seconds)
+..........
+
+Step 2 - Waiting for samples... (60 seconds)
+............................................................
+
+scenario:                                VM - 64 bytes, multi CPUs
+machine name:                            trex09
+DP core count:                           2
+average CPU:                             94.9
+average Gbps:                            6.8405176832
+average Mpps:                            13.3603863833
+average pkt size (bytes):                63.9999986428
+average Gbps per core (at 100% CPU):     7.20813243751
+average Mpps per core (at 100% CPU):     14.0783839656
+
+golden Mpps per core (at 100% CPU):      min: 11.0, max 14.7
+]]></system-out></testcase></testsuite>

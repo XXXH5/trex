@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="54" errors="0" failures="0" skip="28"><testcase classname="stateless_tests.stl_general_test.STLBasic_Test" name="test_connectivity" time="0.531"><system-out><![CDATA[
+Starting TRex... done. (0s)
+Started TRex
+Connecting.
+Connected
+Mapping ports.
+Got ports mapping: {'map': {0: 1, 1: 0}, 'bi': [(0, 1)], 'unknown': []}
+]]></system-out></testcase><testcase classname="stateless_tests.stl_benchmark_test.STLBenchmark_Test" name="test_CPU_benchmark" time="369.136"><system-out><![CDATA[
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 64}
+Done (16s), CPU util: 3.99863, norm_pps_per_core:  7.44mpps norm_bw_per_core:   3.81Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 64}
+Done (7s), CPU util: 4.53844, norm_pps_per_core:   6.5mpps norm_bw_per_core:   3.33Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 64}
+Done (10s), CPU util: 3.45808, norm_pps_per_core:   8.6mpps norm_bw_per_core:    4.4Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 128}
+Done (22s), CPU util: 2.67249, norm_pps_per_core:  6.32mpps norm_bw_per_core:   6.48Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 256}
+Done (23s), CPU util: 1.37063, norm_pps_per_core:  6.61mpps norm_bw_per_core:  13.54Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 512}
+Done (17s), CPU util: 0.789201, norm_pps_per_core:  5.96mpps norm_bw_per_core:  24.39Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 1500}
+Done (31s), CPU util: 0.543462, norm_pps_per_core:  3.03mpps norm_bw_per_core:  36.37Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 4000}
+Done (19s), CPU util: 0.88943, norm_pps_per_core:   0.7mpps norm_bw_per_core:   22.4Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'packet_len': 9000}
+Done (3s), CPU util: 0.59482, norm_pps_per_core:  0.48mpps norm_bw_per_core:  26.37Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 10, 'packet_len': 9000}
+Done (31s), CPU util: 0.107072, norm_pps_per_core:  2.59mpps norm_bw_per_core: 186.42Gb/core
+Testing profile stl/udp_for_benchmarks.py, kwargs: {'stream_count': 100, 'packet_len': 9000}
+Done (31s), CPU util: 0.130927, norm_pps_per_core:  2.13mpps norm_bw_per_core: 153.63Gb/core
+Testing profile stl/imix.py, kwargs: {}
+Done (10s), CPU util: 1.74158, norm_pps_per_core:  3.76mpps norm_bw_per_core:  10.89Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 64}
+Done (8s), CPU util: 8.93534, norm_pps_per_core:  3.29mpps norm_bw_per_core:    1.7Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 128}
+Done (7s), CPU util: 4.83832, norm_pps_per_core:  3.48mpps norm_bw_per_core:   3.52Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 256}
+Done (3s), CPU util: 3.46348, norm_pps_per_core:   2.5mpps norm_bw_per_core:   3.99Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 512}
+Done (10s), CPU util: 1.85208, norm_pps_per_core:  2.54mpps norm_bw_per_core:   10.4Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 1500}
+Done (8s), CPU util: 1.49323, norm_pps_per_core:  1.11mpps norm_bw_per_core:  13.12Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 4000}
+Done (31s), CPU util: 0.641976, norm_pps_per_core:  0.97mpps norm_bw_per_core:   31.0Gb/core
+Testing profile stl/udp_1pkt_tuple_gen.py, kwargs: {'packet_len': 9000}
+Done (13s), CPU util: 0.743214, norm_pps_per_core:  0.37mpps norm_bw_per_core:  26.88Gb/core
+Testing profile stl/pcap.py, kwargs: {'loop_count': 0, 'ipg_usec': 5}
+Done (6s), CPU util: 4.94031, norm_pps_per_core:  7.83mpps norm_bw_per_core:   5.22Gb/core
+Testing profile stl/udp_rand_len_9k.py, kwargs: {}
+Done (21s), CPU util: 0.784332, norm_pps_per_core:  0.74mpps norm_bw_per_core:  25.34Gb/core
+Testing profile stl/hlt/hlt_udp_rand_len_9k.py, kwargs: {}
+Done (7s), CPU util: 0.790272, norm_pps_per_core:  0.72mpps norm_bw_per_core:  24.78Gb/core
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_arp_capture" time="0.218"><skipped type="unittest.case.SkipTest" message="skipping ARP capture test for non-ipv4 config on port 0"><![CDATA[SkipTest: skipping ARP capture test for non-ipv4 config on port 0
+]]></skipped><system-out><![CDATA[Skip: skipping ARP capture test for non-ipv4 config on port 0
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_basic_capture" time="0.893"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_ping_capture" time="0.226"><skipped type="unittest.case.SkipTest" message="skipping ARP capture test for non-ipv4 config on port 0"><![CDATA[SkipTest: skipping ARP capture test for non-ipv4 config on port 0
+]]></skipped><system-out><![CDATA[Skip: skipping ARP capture test for non-ipv4 config on port 0
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_rx_from_capture_port_with_filter" time="1.319"><system-out><![CDATA[Done (0.86s),  11.68 RX pps
+]]></system-out></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_capture" time="18.677"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_stress_tx_rx" time="8.953"></testcase><testcase classname="stateless_tests.stl_capture_test.STLCapture_Test" name="test_tx_from_capture_port" time="1.962"><system-out><![CDATA[Done, 630356.63 TX pps
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_all_profiles" time="0.221"><skipped type="unittest.case.SkipTest" message="skipping profile tests for virtual / non loopback"><![CDATA[SkipTest: skipping profile tests for virtual / non loopback
+]]></skipped><system-out><![CDATA[Skip: skipping profile tests for virtual / non loopback
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_connect_disconnect" time="0.385"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_cont" time="0.947"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_multi_burst" time="0.472"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_basic_single_burst" time="0.480"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_bpf" time="2.985"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning" time="0.214"><skipped type="unittest.case.SkipTest" message="pinning test requires at least 2 cores per interface"><![CDATA[SkipTest: pinning test requires at least 2 cores per interface
+]]></skipped><system-out><![CDATA[Skip: pinning test requires at least 2 cores per interface
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_core_pinning_latency" time="0.219"><skipped type="unittest.case.SkipTest" message="pinning test requires at least 2 cores per interface"><![CDATA[SkipTest: pinning test requires at least 2 cores per interface
+]]></skipped><system-out><![CDATA[Skip: pinning test requires at least 2 cores per interface
+]]></system-out></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_latency_pause_resume" time="0.952"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pause_resume_update_streams" time="15.475"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_pcap_remote" time="0.327"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_push_pcap" time="0.245"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_connect_disconnect" time="15.356"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_stress_tx" time="3.187"></testcase><testcase classname="stateless_tests.stl_client_test.STLClient_Test" name="test_tx_from_rx" time="2.626"></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_negative" time="0.001"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_cores" time="0.001"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_several_streams" time="0.001"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single" time="0.001"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_core_id_pinning_test.CoreID_Test" name="test_core_id_pinning_single_burst_loop" time="0.001"><skipped type="unittest.case.SkipTest" message="Must have more than one core for this test."><![CDATA[SkipTest: Must have more than one core for this test.
+]]></skipped><system-out><![CDATA[Skip: Must have more than one core for this test.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_cpp_tests.STLCPP_Test" name="test_mlx5_xstats" time="0.006"><skipped type="unittest.case.SkipTest" message="Test is only for mlx5, this is: net_virtio"><![CDATA[SkipTest: Test is only for mlx5, this is: net_virtio
+]]></skipped><system-out><![CDATA[
+Skip: Test is only for mlx5, this is: net_virtio
+]]></system-out></testcase><testcase classname="stateless_tests.stl_examples_test.STLExamples_Test" name="test_stl_examples" time="11.783"><system-out><![CDATA[Running command: sh -c 'cd ../trex_control_plane/interactive; /usr/cisco/bin/python -m trex.examples.stl.stl_imix -s 10.56.216.157'
+Stdout:
+Mapped ports to sides [0] <--> [1]
+Injecting [0] <--> [1] on total rate of '30%' for 10 seconds
+
+Packets injected from [0]: 4,910,520
+Packets injected from [1]: 4,910,520
+
+packets lost from [0] --> [0]:   0 pkts
+packets lost from [1] --> [1]:   0 pkts
+
+Test has passed :-)
+
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_ipv6_ping_linux_based_stack" time="0.055"><skipped type="unittest.case.SkipTest" message="Relevant only for Linux-based stack in loopback"><![CDATA[SkipTest: Relevant only for Linux-based stack in loopback
+]]></skipped><system-out><![CDATA[
+Skip: Relevant only for Linux-based stack in loopback
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_ping" time="27.586"><system-out><![CDATA[
+No IPv6 replies in loopback as expected.
+Got no replies from non-existing IPv6 1234::1234 as expected.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ipv6_test.STLIPv6_Test" name="test_stl_ipv6_scan6" time="3.170"><system-out><![CDATA[
+No devices found in loopback as expected.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_many_ns" time="0.001"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ns_add_remove" time="0.001"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_ns_test.STLNS_Test" name="test_ping_to_ns" time="0.001"><skipped type="unittest.case.SkipTest" message="We need linux stack and loopback for this tests to work"><![CDATA[SkipTest: We need linux stack and loopback for this tests to work
+]]></skipped><system-out><![CDATA[Skip: We need linux stack and loopback for this tests to work
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_multi_cpus" time="0.202"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_syn_attack_multi_cpus, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_syn_attack_multi_cpus, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_performance_syn_attack_multi_cpus, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_syn_attack_single_cpu" time="0.200"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_syn_attack_single_cpu, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_syn_attack_single_cpu, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_performance_syn_attack_single_cpu, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus" time="0.194"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_multi_cpus, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_multi_cpus, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_performance_vm_multi_cpus, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_multi_cpus_cached" time="0.198"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_multi_cpus_cached, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_multi_cpus_cached, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_performance_vm_multi_cpus_cached, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu" time="0.201"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_single_cpu, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_single_cpu, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_performance_vm_single_cpu, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_performance_test.STLPerformance_Test" name="test_performance_vm_single_cpu_cached" time="0.199"><skipped type="unittest.case.SkipTest" message="No data in benchmark.yaml for test: test_performance_vm_single_cpu_cached, param: cfg. Skipping."><![CDATA[SkipTest: No data in benchmark.yaml for test: test_performance_vm_single_cpu_cached, param: cfg. Skipping.
+]]></skipped><system-out><![CDATA[Skip: No data in benchmark.yaml for test: test_performance_vm_single_cpu_cached, param: cfg. Skipping.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_1_stream_many_iterations" time="1.795"><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+
+injecting 50 packets on port 0
+Stream: Latency, with field engine of random packet size
+Stream: Latency, short packet with field engine
+Stream: Latency, large packet field engine
+Stream: Latency, 9k packet with field engine
+Stream: Flow stat. No latency
+Stream: Latency, no field engine
+Stream: Flow stat with vlan. No latency
+Stream: IPv6 flow stat. No latency
+Stream: IPv6 latency, no field engine
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_9k_stream" time="0.078"><skipped type="unittest.case.SkipTest" message="Skip this for virtual NICs"><![CDATA[SkipTest: Skip this for virtual NICs
+]]></skipped><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+Skip: Skip this for virtual NICs
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_fcs_stream" time="0.593"><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+
+Sending from ports: [0, 1], has latency: True 
+
+Sending from ports: [0, 1], has latency: False 
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_incremental_latency_streams" time="0.076"><skipped type="unittest.case.SkipTest" message="Skip this for virtual NICs"><![CDATA[SkipTest: Skip this for virtual NICs
+]]></skipped><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+Skip: Skip this for virtual NICs
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams" time="0.069"><skipped type="unittest.case.SkipTest" message="Skip this for virtual NICs"><![CDATA[SkipTest: Skip this for virtual NICs
+]]></skipped><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+Skip: Skip this for virtual NICs
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_multiple_streams_random" time="0.069"><skipped type="unittest.case.SkipTest" message="Skip this for virtual NICs"><![CDATA[SkipTest: Skip this for virtual NICs
+]]></skipped><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+Skip: Skip this for virtual NICs
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_one_stream" time="0.260"><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+
+injecting 50 packets on port 0
+
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_service_mode_flow_stats" time="0.214"><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_vxlan_fs" time="0.194"><skipped type="unittest.case.SkipTest" message="VXLAN is not supported."><![CDATA[SkipTest: VXLAN is not supported.
+]]></skipped><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+Skip: VXLAN is not supported.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_rx_test.STLRX_Test" name="test_x710_counters_wraparound" time="0.086"><skipped type="unittest.case.SkipTest" message="Test is only for i40e."><![CDATA[SkipTest: Test is only for i40e.
+]]></skipped><system-out><![CDATA[
+num cores 1 num 9k mbufs 1024 num 4k mbufs 1024
+Skip: Test is only for i40e.
+]]></system-out></testcase><testcase classname="stateless_tests.stl_services_test.STLServices_Test" name="test_arp_service" time="0.198"><skipped type="unittest.case.SkipTest" message="ARP: skipping test for non IPv4 configuration"><![CDATA[SkipTest: ARP: skipping test for non IPv4 configuration
+]]></skipped><system-out><![CDATA[Skip: ARP: skipping test for non IPv4 configuration
+]]></system-out></testcase></testsuite>
